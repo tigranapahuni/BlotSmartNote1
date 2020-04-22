@@ -4,8 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_1"
     android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/background_1"
+        android:scaleType="centerCrop"/>
 
     <LinearLayout
         android:id="@+id/linearLayout_menu_med_line"
@@ -29,7 +35,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:background="@color/colorGray1"
+                    android:background="@color/colorgray33"
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
 
@@ -88,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="3"
-                    android:background="@color/colorGray1"
+                    android:background="@color/colorgray33"
                     android:orientation="vertical">
 
                     <View
@@ -162,7 +168,7 @@
                         android:id="@+id/txt_announce"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorGray1"
+                        android:background="@color/colorgray33"
                         android:clickable="true"
                         android:text="@string/announce"
                         android:textAllCaps="false"
@@ -272,8 +278,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
 
         android:tint="@android:color/white"
         app:fabSize="mini"
