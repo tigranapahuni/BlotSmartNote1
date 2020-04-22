@@ -13,150 +13,165 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-         >
+            android:layout_marginLeft="@dimen/cardView_padding"
+            android:layout_marginRight="@dimen/cardView_padding"
+            android:foreground="?android:attr/selectableItemBackground">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:orientation="vertical"
-                android:gravity="center_horizontal"
-                android:background="@color/colorGray1">
-
-                <Button
-                    android:id="@+id/txt_player1"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/btn_height_normal_size"
-                    android:background="@android:color/transparent"
-                    android:text="@string/player1"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorNavIcon"
-                    android:textSize="12sp" />
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
-    android:layout_marginRight="20dp"
-    android:layout_alignParentRight="true"
-    android:text="D"
-    android:textColor="@color/colorNavIcon"
-    android:textSize="9sp" />
-                <View
-                    android:background="@color/colorWhite3"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_below="@id/txt_player1"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    />
-                <Button
-                    android:id="@+id/txt_player2"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/btn_height_normal_size"
-                    android:layout_below="@id/txt_player1"
-                    android:background="@android:color/transparent"
-                    android:text="@string/player2"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorNavIcon"
-                    android:textSize="12sp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="46dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_alignParentRight="true"
-                    android:text="D"
-                    android:textColor="@color/colorNavIcon"
-                    android:textSize="9sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:orientation="vertical"
-                android:layout_gravity="center"
-                android:background="@color/colorGray1">
-
-                <View
-                    android:background="@color/colorWhite3"
-                    android:layout_width="1dp"
-                    android:layout_height="60dp"/>
-
-                <Button
-                    android:id="@+id/txt_player3"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/btn_height_normal_size"
-                    android:background="@android:color/transparent"
-                    android:text="@string/player3"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorNavIcon"
-                    android:textSize="12sp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_alignParentRight="true"
-
-                    android:text="D"
-                    android:textColor="@color/colorNavIcon"
-                    android:textSize="9sp" />
-                <View
-                    android:background="@color/colorWhite3"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_below="@id/txt_player3"/>
-                <Button
-                    android:id="@+id/txt_player4"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/btn_height_normal_size"
-                    android:layout_below="@id/txt_player3"
-                    android:background="@android:color/transparent"
-                    android:clickable="true"
-                    android:text="@string/player4"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorNavIcon"
-                    android:textSize="12sp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="46dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_alignParentRight="true"
-                    android:text="D"
-                    android:textColor="@color/colorNavIcon"
-                    android:textSize="9sp" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="3"
-                android:gravity="center"
-                android:paddingLeft="1dp"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/txt_announce"
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@color/colorGray1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/txt_player1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_height_normal_size"
+                        android:background="@android:color/transparent"
+                        android:text="@string/player1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorNavIcon"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="20dp"
+                        android:text="D"
+                        android:textColor="@color/colorNavIcon"
+                        android:textSize="9sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/txt_player1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorWhite3" />
+
+                    <Button
+                        android:id="@+id/txt_player2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_height_normal_size"
+                        android:layout_below="@id/txt_player1"
+                        android:background="@android:color/transparent"
+                        android:text="@string/player2"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorNavIcon"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="46dp"
+                        android:layout_marginRight="20dp"
+                        android:text="D"
+                        android:textColor="@color/colorNavIcon"
+                        android:textSize="9sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="@color/colorGray1"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="60dp"
+                        android:background="@color/colorWhite3" />
+
+                    <Button
+                        android:id="@+id/txt_player3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_height_normal_size"
+                        android:background="@android:color/transparent"
+                        android:text="@string/player3"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorNavIcon"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="20dp"
+
+                        android:text="D"
+                        android:textColor="@color/colorNavIcon"
+                        android:textSize="9sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/txt_player3"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorWhite3" />
+
+                    <Button
+                        android:id="@+id/txt_player4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_height_normal_size"
+                        android:layout_below="@id/txt_player3"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:text="@string/player4"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorNavIcon"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="46dp"
+                        android:layout_marginRight="20dp"
+                        android:text="D"
+                        android:textColor="@color/colorNavIcon"
+                        android:textSize="9sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/colorGray1"
-                    android:clickable="true"
-                    android:text="@string/announce"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorNavIcon"
-                    android:textSize="12sp" />
-            </RelativeLayout>
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="1dp">
 
-        </LinearLayout>
+                    <Button
+                        android:id="@+id/txt_announce"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorGray1"
+                        android:clickable="true"
+                        android:text="@string/announce"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorNavIcon"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <View
             android:id="@+id/line_menu"
@@ -164,28 +179,69 @@
             android:layout_height="1dp"
             android:background="@color/colorWhite3" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_weight="3"
-    android:text="301"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="301"/>
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
 
-        <TextView
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="301"/>
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="301"
+                android:textSize="35sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="301"
+                android:textSize="35sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground">
+
+
+            <Spinner
+                android:id="@+id/spinner_countries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:dropDownSelector="#ff22"
+                android:spinnerMode="dropdown" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="301"
+                android:textSize="35sp" />
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabMain"
         android:layout_width="wrap_content"
@@ -193,7 +249,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
 
-        android:layout_margin="15dp"
+        android:layout_margin="25dp"
 
         android:tint="@android:color/white"
         app:fabSize="mini"
