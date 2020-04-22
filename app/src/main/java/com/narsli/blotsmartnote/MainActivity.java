@@ -12,17 +12,17 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private ArrayList<MastItem> mastList;
-    private MastAdapter adapter;
+//    private MastAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         initList();
-        Spinner spinnerCountries = findViewById(R.id.spinner_countries);
+        Spinner spinnerCountries = findViewById(R.id.spinner_masts);
 
-        adapter = new MastAdapter(this, mastList);
-        spinnerCountries.setAdapter(adapter);
+//        adapter = new MastAdapter(this, mastList);
+//        spinnerCountries.setAdapter(adapter);
 
         spinnerCountries.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
