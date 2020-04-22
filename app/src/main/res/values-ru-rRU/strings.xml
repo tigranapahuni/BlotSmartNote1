@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Blot Smart Note</string>
+    <string name="player1">игрок1</string>
+    <string name="player2">игрок2</string>
+    <string name="player3">игрок3</string>
+    <string name="player4">игрок4</string>
+    <string name="announce">Объявлять</string>
+
+</resources>
