@@ -193,22 +193,22 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
        android:background="@color/colorgray33"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:orientation="horizontal">
 
 
-        <TextView
+        <EditText
             android:id="@+id/txtView_1"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:background="@drawable/btn_top_fon"
-            android:hint="@string/team1"
             android:gravity="center"
+            android:hint="@string/team1"
             android:textSize="25sp" />
 
 
-        <TextView
+        <EditText
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_top_fon"
@@ -220,6 +220,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <Spinner
@@ -230,7 +231,7 @@
                 android:background="@drawable/btn_top_fon"
                 android:spinnerMode="dropdown" />
 
-            <TextView
+            <EditText
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_top_fon"
