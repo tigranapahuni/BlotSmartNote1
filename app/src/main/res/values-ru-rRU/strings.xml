@@ -6,5 +6,7 @@
     <string name="player3">игрок3</string>
     <string name="player4">игрок4</string>
     <string name="announce">Объявлять</string>
-
+    <string name="team1">Ком. 1</string>
+    <string name="team2">Ком. 2</string>
+    <string name="order">Заказ</string>
 </resources>

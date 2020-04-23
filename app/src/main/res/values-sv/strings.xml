@@ -6,4 +6,7 @@
     <string name="player3">spelare3</string>
     <string name="player4">spelare4</string>
     <string name="announce">Declare</string>
+    <string name="team1">Lag1</string>
+    <string name="team2">Lag2</string>
+    <string name="order">beställa</string>
 </resources>

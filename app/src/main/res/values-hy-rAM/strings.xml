@@ -6,5 +6,7 @@
     <string name="player3">խաղացող3</string>
     <string name="player4">խաղացող4</string>
     <string name="announce">Հայտարարել</string>
-
+    <string name="team1">Թիմ1</string>
+    <string name="team2">Թիմ2</string>
+    <string name="order">Պատվեր</string>
 </resources>

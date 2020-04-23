@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private ArrayList<MastItem> mastList;
-//    private MastAdapter adapter;
+    private MastAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         initList();
         Spinner spinnerCountries = findViewById(R.id.spinner_masts);
 
-//        adapter = new MastAdapter(this, mastList);
-//        spinnerCountries.setAdapter(adapter);
+        adapter = new MastAdapter(this, mastList);
+        spinnerCountries.setAdapter(adapter);
 
         spinnerCountries.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mastList.add(new MastItem( R.drawable.s_24));
         mastList.add(new MastItem( R.drawable.x_24));
         mastList.add(new MastItem( R.drawable.q_24));
-        mastList.add(new MastItem( R.drawable.t_24));
         mastList.add(new MastItem( R.drawable.xar_24));
+        mastList.add(new MastItem( R.drawable.t_24));
     }
 }
