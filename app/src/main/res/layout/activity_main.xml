@@ -283,30 +283,14 @@
             android:onClick="open_extra_buttons"
             android:textSize="25sp" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="3"
-            android:orientation="horizontal">
-
-            <Spinner
-                android:id="@+id/spinner_masts"
+        <Button
+            android:id="@+id/tnm_order"
+            android:hint="Order"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-
+            android:layout_weight="3"
                 android:background="@drawable/btn_top_fon"
-                android:spinnerMode="dropdown" />
-
-            <Spinner
-                android:id="@+id/spinner_order"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:background="@drawable/btn_top_fon"
-                android:spinnerMode="dropdown"
-                android:padding="4dp"
-                />
-        </LinearLayout>
+            android:onClick="open_extra_Order_buttons" />
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
