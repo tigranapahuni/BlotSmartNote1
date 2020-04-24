@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_main);
 //inicializacia
 //      extra Button xml-i elementneri inicializaica
-        Button btn_1_ExtraBtn = findViewById(R.id.btn_1);
+        Button btn_1_ExtraBtn = findViewById(R.id.terz);
 //-----------------------------------------------------------------
         initList();
         Spinner spinnerMasts = findViewById(R.id.spinner_masts);
@@ -47,9 +47,11 @@ public class MainActivity extends AppCompatActivity implements
       Spinner  spinner = findViewById(R.id.spinner_order);
 
         ArrayAdapter<Integer> dataAdapter = new ArrayAdapter<Integer>(this,
-                android.R.layout.simple_spinner_item, order);
-//
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                android.R.layout.simple_dropdown_item_1line, order);
+//simple_spinner_dropdown_item
+//simple_selectable_list_item
+//simple_dropdown_item_1line
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spinner.setAdapter(dataAdapter);
 //------------------
         spinnerMasts.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

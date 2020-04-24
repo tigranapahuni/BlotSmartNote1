@@ -53,16 +53,16 @@ import java.util.List;
 
             initList();
             Spinner spinnerMasts = v.findViewById(R.id.spinner_masts);
-            Button btn_1 = v.findViewById(R.id.btn_1);
-            Button btn_2 = v.findViewById(R.id.btn_2);
+            Button btn_1 = v.findViewById(R.id.blot);
+            Button btn_2 = v.findViewById(R.id.terz);
 //            EditText editText= v.findViewById(R.id.EditText_Order);
 //------------------
            spinner = v.findViewById(R.id.spinner_order);
 
             ArrayAdapter<Integer> dataAdapter = new ArrayAdapter<Integer>(getContext(),
-                      android.R.layout.simple_spinner_item, order);
+                      android.R.layout.simple_dropdown_item_1line, order);
 //
-            dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            dataAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
             spinner.setAdapter(dataAdapter);
 //------------------
 

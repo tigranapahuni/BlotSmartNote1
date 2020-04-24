@@ -305,7 +305,7 @@
                 android:layout_height="45dp"
                 android:background="@drawable/btn_top_fon"
                 android:spinnerMode="dropdown"
-                android:layout_gravity="center"
+                android:padding="4dp"
                 />
         </LinearLayout>
     </LinearLayout>
