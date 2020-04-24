@@ -8,6 +8,7 @@
     <string name="team1">Team1</string>
     <string name="team2">Team2</string>
     <string name="order">Order</string>
+    <string name="points">points and combinations</string>
 
     <string name="announce">Announce</string>
 </resources>

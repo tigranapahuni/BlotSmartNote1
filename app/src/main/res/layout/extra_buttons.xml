@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:id="@+id/txtView_1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:background="@drawable/btn_top_fon"
+            android:clickable="false"
+            android:gravity="center"
+            android:hint="@string/team1"
+            android:textSize="25sp"/>
+
+
+        <EditText
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:background="@drawable/btn_top_fon"
+            android:clickable="false"
+            android:gravity="center"
+            android:hint="@string/team2"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_masts"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/btn_top_fon"
+                android:spinnerMode="dropdown"/>
+
+            <Spinner
+                android:id="@+id/spinner_order"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_top_fon"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/line_menu"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/points"
+        android:textSize="25sp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="18sp"/>
+</LinearLayout>
+</LinearLayout>
