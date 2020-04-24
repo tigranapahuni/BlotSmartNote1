@@ -10,4 +10,10 @@
     <string name="team2">Ком. 2</string>
     <string name="order">Заказ</string>
     <string name="points">Очки и Комбинации</string>
+    <string name="hitsun">Пятьдесят</string>
+    <string name="sto">Сто</string>
+    <string name="terz">Терз</string>
+    <string name="blot">Блот</string>
+
+
 </resources>

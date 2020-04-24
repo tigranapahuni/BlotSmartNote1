@@ -1,14 +1,21 @@
 <resources>
     <string name="app_name">Blot Smart Note</string>
 
-    <string name="player1">Player1</string>
-    <string name="player2">Player2</string>
-    <string name="player3">Player3</string>
-    <string name="player4">Player4</string>
+    <string name="player1">Tigran</string>
+    <string name="player2">Tiko</string>
+    <string name="player3">Hovo</string>
+    <string name="player4">Smbo</string>
     <string name="team1">Team1</string>
     <string name="team2">Team2</string>
     <string name="order">Order</string>
     <string name="points">points and combinations</string>
 
     <string name="announce">Announce</string>
+    <string name="terz">Терз</string>
+    <string name="hitsun">Пятьдесят</string>
+    <string name="sto">Сто</string>
+    <string name="terz">Терз</string>
+    <string name="blot">Блот</string>
+    <string name="fourpaper">4 карты</string>
+
 </resources>

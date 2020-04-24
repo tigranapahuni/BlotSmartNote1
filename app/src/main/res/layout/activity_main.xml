@@ -4,14 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/coloryellownew"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/background_1" />
+
 
     <LinearLayout
         android:id="@+id/linearLayout_menu_med_line"
@@ -35,7 +31,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:background="@color/colorgray33"
+                    android:background="@color/colorBlack"
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
 
@@ -46,18 +42,19 @@
                         android:background="@android:color/transparent"
                         android:text="@string/player1"
                         android:textAllCaps="false"
-                        android:textColor="@color/colorNavIcon"
+                        android:textStyle="bold"
+                        android:textColor="@color/coloryellownew"
                         android:textSize="@dimen/player_size" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_marginTop="16dp"
                         android:layout_marginRight="20dp"
+                        android:textStyle="bold"
                         android:text="D"
-                        android:textColor="@color/colorNavIcon"
-                        android:textSize="9sp" />
+                        android:textColor="@color/colorRed"
+                        android:textSize="20sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -65,7 +62,8 @@
                         android:layout_below="@id/txt_player1"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
-                        android:background="@color/colorWhite3" />
+                        android:background="@color/coloryellownew"
+                        />
 
                     <Button
                         android:id="@+id/txt_player2"
@@ -75,32 +73,34 @@
                         android:background="@android:color/transparent"
                         android:text="@string/player2"
                         android:textAllCaps="false"
-                        android:textColor="@color/colorNavIcon"
+                        android:textStyle="bold"
+                        android:textColor="@color/coloryellownew"
                         android:textSize="@dimen/player_size"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_marginTop="46dp"
+                        android:layout_marginTop="30dp"
                         android:layout_marginRight="20dp"
                         android:text="D"
-                        android:textColor="@color/colorNavIcon"
-                        android:textSize="9sp" />
+                        android:textStyle="bold"
+                        android:textColor="@color/colorRed"
+                        android:textSize="20sp" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:background="@color/colorBlack"
                     android:layout_weight="3"
-                    android:background="@color/colorgray33"
                     android:orientation="vertical">
 
                     <View
-                        android:layout_width="1dp"
+                        android:layout_width="2dp"
                         android:layout_height="60dp"
-                        android:background="@color/colorWhite3" />
+                        android:background="@color/coloryellownew" />
 
                     <Button
                         android:id="@+id/txt_player3"
@@ -109,18 +109,19 @@
                         android:background="@android:color/transparent"
                         android:text="@string/player3"
                         android:textAllCaps="false"
-                        android:textColor="@color/colorNavIcon"
+                        android:textStyle="bold"
+                        android:textColor="@color/coloryellownew"
                         android:textSize="@dimen/player_size" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_marginTop="16dp"
                         android:layout_marginRight="20dp"
+                        android:textStyle="bold"
                         android:text="D"
-                        android:textColor="@color/colorNavIcon"
-                        android:textSize="9sp" />
+                        android:textColor="@color/colorRed"
+                        android:textSize="20sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -128,7 +129,8 @@
                         android:layout_below="@id/txt_player3"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
-                        android:background="@color/colorWhite3" />
+                        android:background="@color/coloryellownew"
+                        />
 
                     <Button
                         android:id="@+id/txt_player4"
@@ -139,18 +141,20 @@
                         android:clickable="true"
                         android:text="@string/player4"
                         android:textAllCaps="false"
-                        android:textColor="@color/colorNavIcon"
+                        android:textStyle="bold"
+                        android:textColor="@color/coloryellownew"
                         android:textSize="@dimen/player_size" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_marginTop="46dp"
+                        android:layout_marginTop="30sp"
                         android:layout_marginRight="20dp"
+                        android:textStyle="bold"
                         android:text="D"
-                        android:textColor="@color/colorNavIcon"
-                        android:textSize="9sp" />
+                        android:textColor="@color/colorRed"
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -158,21 +162,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
+                    android:background="@color/colorBlack"
                     android:layout_weight="3"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:paddingLeft="1dp">
 
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="80dp"
+                        android:background="@color/coloryellownew" />
+
                     <Button
                         android:id="@+id/txt_announce"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorgray33"
                         android:clickable="true"
                         android:text="@string/announce"
                         android:textAllCaps="false"
-                        android:textColor="@color/colorNavIcon"
-                        android:textSize="12sp" />
+                        android:textStyle="bold"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/coloryellownew"
+                        android:textSize="15sp" />
                 </RelativeLayout>
 
             </LinearLayout>
@@ -181,8 +192,8 @@
         <View
             android:id="@+id/line_menu"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorWhite3" />
+            android:layout_height="2dp"
+            android:background="@color/colorBlack" />
     </LinearLayout>
 
     <ScrollView
@@ -228,7 +239,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
+                    android:layout_weight="2"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -264,33 +275,55 @@
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_weight="3"
-            android:background="@drawable/btn_top_fon"
+            android:background="@color/colorBlack"
             android:clickable="false"
             android:gravity="center"
-            android:hint="@string/team1"
+            android:text="@string/team1"
+            android:textColor="@color/coloryellownew"
+            android:textStyle="bold"
             android:onClick="open_extra_buttons"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/coloryellownew" />
 
         <TextView
+            android:id="@+id/txtView_2"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_weight="3"
-            android:background="@drawable/btn_top_fon"
+            android:background="@color/colorBlack"
             android:clickable="false"
             android:gravity="center"
-            android:hint="@string/team2"
+            android:text="@string/team2"
+            android:textColor="@color/coloryellownew"
+            android:textStyle="bold"
             android:onClick="open_extra_buttons"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
-        <Button
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/coloryellownew" />
+
+        <TextView
             android:id="@+id/tnm_order"
-            android:hint="Order"
-                android:layout_width="45dp"
-                android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
             android:layout_weight="3"
-                android:background="@drawable/btn_top_fon"
-            android:onClick="open_extra_Order_buttons" />
+            android:background="@color/colorBlack"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="Order"
+            android:textColor="@color/coloryellownew"
+            android:onClick="open_extra_Order_buttons"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
