@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Blot Smart Note</string>
 
-    <string name="player1">player1</string>
-    <string name="player2">player2</string>
-    <string name="player3">player3</string>
-    <string name="player4">player4</string>
+    <string name="player1">Player1</string>
+    <string name="player2">Player2</string>
+    <string name="player3">Player3</string>
+    <string name="player4">Player4</string>
     <string name="team1">Team1</string>
     <string name="team2">Team2</string>
     <string name="order">Order</string>

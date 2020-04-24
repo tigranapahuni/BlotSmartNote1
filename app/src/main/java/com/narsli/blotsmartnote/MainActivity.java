@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_main);
 //inicializacia
 //      extra Button xml-i elementneri inicializaica
-        Button btn_1_ExtraBtn = findViewById(R.id.terz);
+//        Button btn_1_ExtraBtn = findViewById(R.id.terz);
 //-----------------------------------------------------------------
         initList();
         Spinner spinnerMasts = findViewById(R.id.spinner_masts);

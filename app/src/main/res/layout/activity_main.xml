@@ -47,7 +47,7 @@
                         android:text="@string/player1"
                         android:textAllCaps="false"
                         android:textColor="@color/colorNavIcon"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/player_size" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
                         android:text="@string/player2"
                         android:textAllCaps="false"
                         android:textColor="@color/colorNavIcon"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/player_size"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
                         android:text="@string/player3"
                         android:textAllCaps="false"
                         android:textColor="@color/colorNavIcon"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/player_size" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -118,7 +118,6 @@
                         android:layout_alignParentRight="true"
                         android:layout_marginTop="16dp"
                         android:layout_marginRight="20dp"
-
                         android:text="D"
                         android:textColor="@color/colorNavIcon"
                         android:textSize="9sp" />
@@ -141,7 +140,7 @@
                         android:text="@string/player4"
                         android:textAllCaps="false"
                         android:textColor="@color/colorNavIcon"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/player_size" />
 
                     <TextView
                         android:layout_width="wrap_content"

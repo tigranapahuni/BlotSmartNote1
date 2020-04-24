@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +7,17 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background_1" />
 
     <LinearLayout
+        android:id="@+id/layout_vernagir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:gravity="center"
@@ -74,82 +79,85 @@
         android:id="@+id/line_menu"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_below="@+id/layout_vernagir"
         android:background="@color/colorWhite3" />
     <TextView
+        android:id="@+id/text_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
         android:text="@string/points"
+        android:layout_below="@+id/layout_vernagir"
         android:textSize="25sp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/text_point"
         android:layout_gravity="center"
-
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/blot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center_horizontal"
-            android:text="Blot"
+        <CheckBox
+            android:id="@+id/chckBx_blot"
+            android:layout_width="88dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:text="blot"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/terz"
+        <TextView
+            android:id="@+id/txtView_terz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_toStartOf="@+id/blot"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="16dp"
             android:text="Terz"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/blot" />
+            app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
 
         <Button
-            android:id="@+id/btn_50"
+            android:id="@+id/Btn_terz_minus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="-"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/txtView_terz"
+            app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+        <TextView
+            android:id="@+id/txtView_terz_Qanak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toStartOf="@+id/terz"
-            android:text="50"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="65dp"
+            android:text="0"
             android:textSize="18sp"
-            android:layout_marginTop="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/terz" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Btn_terz_minus"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <Button
-            android:id="@+id/btn_100"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toStartOf="@+id/btn_50"
-            android:text="100"
-            android:textSize="18sp"
-            android:layout_marginTop="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_50" />
-        <Button
-            android:id="@+id/btn_4tuxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toStartOf="@+id/btn_100"
-            android:text="x4"
-            android:textSize="18sp"
-            android:layout_marginTop="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_100" />
+            android:id="@+id/btn_terz_plus"
+            android:layout_width="35dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="72dp"
+            android:text="+"
+            android:textSize="12sp"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintStart_toEndOf="@+id/txtView_terz_Qanak"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+
+</RelativeLayout>

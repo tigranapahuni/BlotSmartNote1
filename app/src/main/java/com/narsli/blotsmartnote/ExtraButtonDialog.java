@@ -53,8 +53,8 @@ import java.util.List;
 
             initList();
             Spinner spinnerMasts = v.findViewById(R.id.spinner_masts);
-            Button btn_1 = v.findViewById(R.id.blot);
-            Button btn_2 = v.findViewById(R.id.terz);
+            Button btn_1 = v.findViewById(R.id.Btn_terz_minus);
+            Button btn_2 = v.findViewById(R.id.Btn_terz_minus);
 //            EditText editText= v.findViewById(R.id.EditText_Order);
 //------------------
            spinner = v.findViewById(R.id.spinner_order);

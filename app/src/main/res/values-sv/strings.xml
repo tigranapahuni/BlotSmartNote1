@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Blot Smart Note</string>
-    <string name="player1">spelare1</string>
-    <string name="player2">spelare2</string>
-    <string name="player3">spelare3</string>
-    <string name="player4">spelare4</string>
+    <string name="player1">Spelare1</string>
+    <string name="player2">Spelare2</string>
+    <string name="player3">Spelare3</string>
+    <string name="player4">Spelare4</string>
     <string name="announce">Declare</string>
     <string name="team1">Lag1</string>
     <string name="team2">Lag2</string>
