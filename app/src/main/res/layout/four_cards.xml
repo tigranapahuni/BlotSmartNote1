@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/coloryellownew"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtView_terz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="T"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+                <Button
+                    android:id="@+id/btn_terz_minus23"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_score"
+                    android:text="-"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz_Qanak"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtView_terz_Qanak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:padding="5dp"
+                    android:text="1"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Btn_terz_minus"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/Btn_terz_plus"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/btn_score"
+                    android:text="+"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtView_100"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="V"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+                <Button
+                    android:id="@+id/btn_100_minus"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_score"
+                    android:text="-"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz_Qanak"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtView_100_Qanak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Btn_terz_minus"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/Btn_100_plus"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/btn_score"
+                    android:text="+"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtView_50"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="9"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+                <Button
+                    android:id="@+id/btn_50_minus"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_score"
+                    android:text="-"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz_Qanak"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtView_50_Qanak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Btn_terz_minus"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/Btn_50_plus"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/btn_score"
+                    android:text="+"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtView_terz12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="10 D K"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+                <Button
+                    android:id="@+id/btn_terz_minus"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_score"
+                    android:text="-"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz_Qanak"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtView_terz_Qanak233"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Btn_terz_minus"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/Btn_terz_plus12"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/btn_score"
+                    android:text="+"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@color/colorBlack" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtView_terz2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="T"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+                <Button
+                    android:id="@+id/btn_terz_minus232"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_score"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz_Qanak"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkBox22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    />
+
+                <Button
+                    android:id="@+id/Btn_terz_plus2222"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/btn_score"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view22222"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtView_100222"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="V"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+                <Button
+                    android:id="@+id/btn_100_minus222"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_score"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz_Qanak"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <CheckBox
+                    android:id="@+id/checkBox28525"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    />
+
+                <Button
+                    android:id="@+id/Btn_100_plus222"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/btn_score"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view222"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtView_50222"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="9"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+                <Button
+                    android:id="@+id/btn_50_minus222"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_score"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz_Qanak"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <CheckBox
+                    android:id="@+id/checkBox285"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    />
+
+                <Button
+                    android:id="@+id/Btn_50_plus222"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/btn_score"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtView_terz1285"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="10 D K"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+                <Button
+                    android:id="@+id/btn_terz_minus85"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_score"
+                    android:text="-"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz_Qanak"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtView_terz_Qanak23853"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Btn_terz_minus"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/Btn_terz_plus1852"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/btn_score"
+                    android:text="+"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/txtView_terz"
+                    app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorBlack" />
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/ImgBtn_Ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:background="@drawable/btn_score"
+            android:gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/ic_check_yelow_24dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
