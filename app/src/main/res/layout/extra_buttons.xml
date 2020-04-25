@@ -16,6 +16,66 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ems="4"
+                android:text="6"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"/>
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ems="4"
+                android:text="5"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="="
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"/>
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ems="4"
+                android:text="11"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
             android:layout_marginBottom="5dp"
@@ -32,10 +92,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:text="@string/fourpaper"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25sp"
+                    android:textSize="@dimen/card_text_size"
 
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -43,8 +103,8 @@
 
                 <Button
                     android:id="@+id/btn_4x4_minus"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
                     android:background="@drawable/btn_score"
                     android:text="-"
                     android:textColor="@color/coloryellownew"
@@ -59,19 +119,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20sp"
-                    android:layout_marginTop="5dp"
                     android:layout_marginRight="20sp"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:text="0"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/Btn_terz_minus"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/Btn_4x4_plus"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
                     android:layout_marginEnd="20sp"
                     android:background="@drawable/btn_score"
                     android:text="+"
@@ -101,10 +160,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:text="@string/sto"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25sp"
+                    android:textSize="@dimen/card_text_size"
 
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -112,8 +171,8 @@
 
                 <Button
                     android:id="@+id/btn_100_minus"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
                     android:background="@drawable/btn_score"
                     android:text="-"
                     android:textColor="@color/coloryellownew"
@@ -128,19 +187,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20sp"
-                    android:layout_marginTop="5dp"
                     android:layout_marginRight="20sp"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:text="0"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/Btn_terz_minus"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/Btn_100_plus"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
                     android:layout_marginEnd="20sp"
                     android:background="@drawable/btn_score"
                     android:text="+"
@@ -170,10 +228,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:text="@string/hitsun"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25sp"
+                    android:textSize="@dimen/card_text_size"
 
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -181,8 +239,8 @@
 
                 <Button
                     android:id="@+id/btn_50_minus"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
                     android:background="@drawable/btn_score"
                     android:text="-"
                     android:textColor="@color/coloryellownew"
@@ -197,19 +255,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20sp"
-                    android:layout_marginTop="5dp"
                     android:layout_marginRight="20sp"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:text="0"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/Btn_terz_minus"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/Btn_50_plus"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
                     android:layout_marginEnd="20sp"
                     android:background="@drawable/btn_score"
                     android:text="+"
@@ -238,10 +295,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:text="@string/terz"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25sp"
+                    android:textSize="@dimen/card_text_size"
 
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -249,8 +306,8 @@
 
                 <Button
                     android:id="@+id/btn_terz_minus"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
                     android:background="@drawable/btn_score"
                     android:text="-"
                     android:textColor="@color/coloryellownew"
@@ -265,19 +322,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20sp"
-                    android:layout_marginTop="5dp"
                     android:layout_marginRight="20sp"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:text="0"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/Btn_terz_minus"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/Btn_terz_plus"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
                     android:layout_marginEnd="20sp"
                     android:background="@drawable/btn_score"
                     android:text="+"
@@ -306,18 +362,18 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:text="@string/blot"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25sp"
+                    android:textSize="@dimen/card_text_size"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/chckBx_blot" />
 
                 <Button
                     android:id="@+id/btn_blot_minus"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
                     android:background="@drawable/btn_score"
                     android:text="-"
                     android:textColor="@color/coloryellownew"
@@ -332,19 +388,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20sp"
-                    android:layout_marginTop="5dp"
                     android:layout_marginRight="20sp"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:text="0"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/Btn_terz_minus"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/Btn_blot_plus"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
+                    android:layout_width="@dimen/plus_minus_Btn_size"
+                    android:layout_height="@dimen/plus_minus_Btn_size"
                     android:layout_marginEnd="20sp"
                     android:background="@drawable/btn_score"
                     android:text="+"

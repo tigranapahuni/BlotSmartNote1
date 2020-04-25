@@ -255,7 +255,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
         ImgBtn_tuz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ImgBtn_tuz.setBackgroundResource(R.color.colorWhite2);
+                ImgBtn_tuz.setBackgroundResource(R.color.coloryellowstrong);
                 ImgBtn_xach.setBackgroundResource(R.color.coloryellownew);
                 ImgBtn_xar.setBackgroundResource(R.color.coloryellownew);
                 ImgBtn_sirt.setBackgroundResource(R.color.coloryellownew);
@@ -272,7 +272,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                 mast_banali = 0;
                 mListener.orderon_onButtonClicked(mast_banali, order);
 
-                ImgBtn_xach.setBackgroundResource(R.color.colorWhite2);
+                ImgBtn_xach.setBackgroundResource(R.color.coloryellowstrong);
                 ImgBtn_tuz.setBackgroundResource(R.color.coloryellownew);
                 ImgBtn_xar.setBackgroundResource(R.color.coloryellownew);
                 ImgBtn_sirt.setBackgroundResource(R.color.coloryellownew);
@@ -286,7 +286,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                 mast_banali = 2;
                 mListener.orderon_onButtonClicked(mast_banali, order);
 
-                ImgBtn_xar.setBackgroundResource(R.color.colorWhite2);
+                ImgBtn_xar.setBackgroundResource(R.color.coloryellowstrong);
                 ImgBtn_xach.setBackgroundResource(R.color.coloryellownew);
                 ImgBtn_tuz.setBackgroundResource(R.color.coloryellownew);
                 ImgBtn_sirt.setBackgroundResource(R.color.coloryellownew);
@@ -300,7 +300,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                 mast_banali = 1;
                 mListener.orderon_onButtonClicked(mast_banali, order);
 
-                ImgBtn_sirt.setBackgroundResource(R.color.colorWhite2);
+                ImgBtn_sirt.setBackgroundResource(R.color.coloryellowstrong);
                 ImgBtn_xar.setBackgroundResource(R.color.coloryellownew);
                 ImgBtn_xach.setBackgroundResource(R.color.coloryellownew);
                 ImgBtn_tuz.setBackgroundResource(R.color.coloryellownew);
@@ -314,7 +314,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                 mast_banali = 3;
                 mListener.orderon_onButtonClicked(mast_banali, order);
 
-                ImgBtn_qiap.setBackgroundResource(R.color.colorWhite2);
+                ImgBtn_qiap.setBackgroundResource(R.color.coloryellowstrong);
                 ImgBtn_xar.setBackgroundResource(R.color.coloryellownew);
                 ImgBtn_xach.setBackgroundResource(R.color.coloryellownew);
                 ImgBtn_tuz.setBackgroundResource(R.color.coloryellownew);
