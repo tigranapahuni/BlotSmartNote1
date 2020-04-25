@@ -10,8 +10,10 @@
     <string name="team2">Lag2</string>
     <string name="order">beställa</string>
     <string name="points">Poäng och kombinationer</string>
-    <string name="hitsun">Пятьдесят</string>
-    <string name="sto">Сто</string>
-    <string name="terz">Терз</string>
-    <string name="blot">Блот</string>
+
+    <string name="hitsun">Femtio</string>
+    <string name="sto">Hundra</string>
+    <string name="terz">Terz</string>
+    <string name="blot">Blot</string>
+    <string name="fourpaper">4 kort</string>
 </resources>

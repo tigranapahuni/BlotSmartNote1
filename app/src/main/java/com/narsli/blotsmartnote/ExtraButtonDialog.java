@@ -38,8 +38,8 @@ import java.util.List;
         public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
             View v = inflater.inflate(R.layout.extra_buttons, container, false);
 
-            Button btn_1 = v.findViewById(R.id.Btn_terz_minus);
-            Button btn_2 = v.findViewById(R.id.Btn_terz_minus);
+            Button btn_1 = v.findViewById(R.id.Btn_7);
+            // Button btn_2 = v.findViewById(R.id.Btn_terz_minus);
 //            EditText editText= v.findViewById(R.id.EditText_Order);
 //------------------
 
@@ -52,14 +52,14 @@ import java.util.List;
 //                dismiss();
                 }
             });
-            btn_2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-//mer sarqac interfeysi realizacia` onButtonClicked- metodi realizacia
-                    mListener.onButtonClicked("Button 2 clicked");
-                    dismiss();
-                }
-            });
+//            btn_2.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+////mer sarqac interfeysi realizacia` onButtonClicked- metodi realizacia
+//                    mListener.onButtonClicked("Button 2 clicked");
+//                    dismiss();
+//                }
+//            });
 
             return v;
         }

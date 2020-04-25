@@ -11,4 +11,9 @@
     <string name="order">Պատվեր</string>
     <string name="points">Միավորներ և կոմբինացիաներ</string>
 
+    <string name="terz">"Թերզ"</string>
+    <string name="hitsun">Հիսուն</string>
+    <string name="sto">Հարյուր</string>
+    <string name="blot">Բլոտ</string>
+    <string name="fourpaper">4 քարտ</string>
 </resources>

@@ -11,11 +11,11 @@
     <string name="points">points and combinations</string>
 
     <string name="announce">Announce</string>
-    <string name="terz">Терз</string>
-    <string name="hitsun">Пятьдесят</string>
-    <string name="sto">Сто</string>
-    <string name="terz">Терз</string>
-    <string name="blot">Блот</string>
-    <string name="fourpaper">4 карты</string>
+
+    <string name="terz">Terz</string>
+    <string name="hitsun">Fifty</string>
+    <string name="sto">Hundred</string>
+    <string name="blot">Blot</string>
+    <string name="fourpaper">4 cards</string>
 
 </resources>

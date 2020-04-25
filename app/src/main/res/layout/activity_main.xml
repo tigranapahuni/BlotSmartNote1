@@ -244,16 +244,21 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/Img_mast"
                         android:layout_width="45dp"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/s_24" />
+                        android:src="@drawable/x_24"
+                        android:onClick="open_extra_Order_buttons" />
 
                     <TextView
+                        android:id="@+id/txtView_order"
                         android:layout_width="wrap_content"
                         android:layout_height="45dp"
                         android:gravity="center"
-                        android:hint="0"
-                        android:textSize="20sp" />
+                        android:ems="2"
+                        android:hint="@string/order"
+                        android:textSize="20sp"
+                        android:onClick="open_extra_Order_buttons" />
                 </LinearLayout>
 
             </LinearLayout>
