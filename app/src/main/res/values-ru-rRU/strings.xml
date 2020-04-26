@@ -8,7 +8,7 @@
     <string name="announce">Объявлять</string>
     <string name="team1">Ком. 1</string>
     <string name="team2">Ком. 2</string>
-    <string name="order">Зак.</string>
+    <string name="order">0</string>
     <string name="points">Очки и Комбинации</string>
 
     <string name="terz">Терз</string>

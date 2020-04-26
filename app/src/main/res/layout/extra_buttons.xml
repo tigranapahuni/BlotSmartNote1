@@ -123,6 +123,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:padding="5dp"
+                    android:layout_marginEnd="15dp"
                     android:text="@string/fourpaper"
                     android:textColor="@color/colorBlack"
                     android:textSize="@dimen/card_text_size"
