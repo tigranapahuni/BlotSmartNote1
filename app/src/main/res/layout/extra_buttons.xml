@@ -37,6 +37,7 @@
             android:textColor="@color/colorBlack"
             android:textSize="20sp" />
 
+
         <EditText
             android:id="@+id/editText5"
             android:layout_width="wrap_content"
@@ -58,6 +59,7 @@
             android:textColor="@color/colorBlack"
             android:textSize="20sp" />
 
+
         <EditText
             android:id="@+id/editText4"
             android:layout_width="wrap_content"
@@ -68,6 +70,8 @@
             android:inputType="number"
             android:text="11"
             android:textSize="20sp" />
+
+
     </LinearLayout>
 
     <ScrollView
@@ -117,14 +121,13 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="15dp"
-            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
             android:background="@color/colorBlack" />
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -159,7 +162,6 @@
             android:layout_height="1dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="15dp"
-            android:layout_weight="1"
             android:background="@color/colorBlack" />
 
 
@@ -224,7 +226,6 @@
             android:layout_height="1dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="15dp"
-            android:layout_weight="1"
             android:background="@color/colorBlack" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -286,7 +287,6 @@
             android:layout_height="1dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="15dp"
-            android:layout_weight="1"
             android:background="@color/colorBlack" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
