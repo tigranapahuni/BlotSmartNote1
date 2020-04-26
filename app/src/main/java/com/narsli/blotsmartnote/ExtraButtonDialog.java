@@ -17,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -60,17 +61,17 @@ import java.util.List;
 //-------------------------------------------------------------------------
 
 
-            Button btn_1 = v.findViewById(R.id.Btn_1);
+            TextView press = v.findViewById(R.id.press);
             Button btn_2 = v.findViewById(R.id.Btn_2);
 //            EditText editText= v.findViewById(R.id.EditText_Order);
 //------------------
 
-            btn_1.setOnClickListener(new View.OnClickListener() {
+            press.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 //mer sarqac interfeysi realizacia` onButtonClicked- metodi realizacia
                     dialog.show();
-                    mListener.onButtonClicked("Button 1 clicked");
+                    mListener.onButtonClicked("TextView press clicked");
                     //miangamic pakel nerqevi toxi
 //                dismiss();
                 }
