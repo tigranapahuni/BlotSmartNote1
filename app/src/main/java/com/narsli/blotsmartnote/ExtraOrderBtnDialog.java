@@ -200,10 +200,32 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
             @Override
             public void onClick(View v) {
                 if (kaput_banali) {
-                    order = "0";
+                    //---------------------------------------------
+                    try {
+                        // int tiv= Integer.parseInt(order);
+                        if (order.length() == 3)
+                            order = order.substring(0, order.length() - 1);
+                        else
+                            order = "0";
+                    } catch (ClassCastException e) {
+                        throw new ClassCastException();
+                    }
+                    //------------------------------------
+                    // order = "0";
                     btn_K.setBackgroundResource(R.color.colorBlack);
                 } else {
-                    order = "K";
+//---------------------------------------------
+                    try {
+                        int tiv = Integer.parseInt(order);
+                        if (tiv > 25)
+                            order = order + "K";
+                        else
+                            order = "K";
+                    } catch (ClassCastException e) {
+                        throw new ClassCastException();
+                    }
+//------------------------------------
+                    //order = "K";
                     mListener.orderon_onButtonClicked(mast_banali, order);
                     btn_K.setBackgroundResource(R.color.colorBlue);
                 }
@@ -212,6 +234,17 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
             }
         });
 //------------------------------------------------------------------
+//---------------------------------------------
+//        try {
+//            int tiv= Integer.parseInt(order);
+//            if (tiv>25)
+//                order =order+ "K";
+//            else
+//                order= "K";
+//        } catch (ClassCastException e) {
+//            throw new ClassCastException();
+//        }
+//------------------------------------
         btn_x2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
