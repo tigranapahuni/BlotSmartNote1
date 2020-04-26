@@ -1,5 +1,6 @@
 package com.narsli.blotsmartnote;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,6 +26,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
             kontr_banali = false;
     int mast_banali;
     String order = "0";
+
     private BottomSheetListenerOrder mListener;//mer sarqac interfeysi ekzempliar
 //--------------------------------------------------------------------------
 
@@ -397,6 +399,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                     + " must implement BottomSheetListener");
         }
     }
+
 //_____________________________________________________________________
 }
 

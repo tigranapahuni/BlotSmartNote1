@@ -2,8 +2,10 @@ package com.narsli.blotsmartnote;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements
         ExtraOrderBtnDialog.BottomSheetListenerOrder {
     private TextView txtView_order;
     private ImageView Img_mast;
+    private Dialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +26,33 @@ public class MainActivity extends AppCompatActivity implements
 //------------------
         txtView_order = findViewById(R.id.txtView_order);
         Img_mast = findViewById(R.id.Img_mast);
+////--------------------------------------------------------------------------
+//        //dialog
+//        dialog=new Dialog(this);//stexcum enq dialog
+//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//anjatum enq vernagirn
+//        dialog.setContentView(R.layout.chors_tuxt_dialog);//kpcnum enq razmetkain(maketin)
+//        //dialog-i foni hetevn lini tapancik
+//        // dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+////asum enq dialogi mej inch ka et chaperov el lini dilaogn
+////         dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT,
+////                 WindowManager.LayoutParams.MATCH_PARENT);
+//        dialog.setCancelable(false);//nazad knopkan anjatum enq
+//
+//
+////        layout=findViewById(R.id.layout);
+//
+////-------------------------------------------------------------------------
+
+
     }
 
+    //    public void aaa(View view) {
+//        dialog.show();
+//    }
+//
+//    public void as(View view) {
+//        dialog.dismiss();
+//    }
     //--------------------------------------------------------------------
     // interfeysi metodi pereopreedlyactia
     @Override
