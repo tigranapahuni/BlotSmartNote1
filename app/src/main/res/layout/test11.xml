@@ -182,8 +182,8 @@
 
                 <Button
                     android:id="@+id/btn_100_minus"
-                    android:layout_width="@dimen/plus_minus_Btn_size"
-                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_width="@dimen/plus_minus_Btn_width"
+                    android:layout_height="@dimen/plus_minus_Btn_height"
                     android:background="@drawable/btn_score"
                     android:text="-"
                     android:textColor="@color/coloryellownew"
@@ -208,8 +208,8 @@
 
                 <Button
                     android:id="@+id/Btn_100_plus"
-                    android:layout_width="@dimen/plus_minus_Btn_size"
-                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_width="@dimen/plus_minus_Btn_width"
+                    android:layout_height="@dimen/plus_minus_Btn_height"
                     android:layout_marginEnd="20sp"
                     android:background="@drawable/btn_score"
                     android:text="+"
@@ -250,8 +250,8 @@
 
                 <Button
                     android:id="@+id/btn_50_minus"
-                    android:layout_width="@dimen/plus_minus_Btn_size"
-                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_width="@dimen/plus_minus_Btn_width"
+                    android:layout_height="@dimen/plus_minus_Btn_height"
                     android:background="@drawable/btn_score"
                     android:text="-"
                     android:textColor="@color/coloryellownew"
@@ -276,8 +276,8 @@
 
                 <Button
                     android:id="@+id/Btn_50_plus"
-                    android:layout_width="@dimen/plus_minus_Btn_size"
-                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_width="@dimen/plus_minus_Btn_width"
+                    android:layout_height="@dimen/plus_minus_Btn_height"
                     android:layout_marginEnd="20sp"
                     android:background="@drawable/btn_score"
                     android:text="+"
@@ -317,8 +317,8 @@
 
                 <Button
                     android:id="@+id/btn_terz_minus"
-                    android:layout_width="@dimen/plus_minus_Btn_size"
-                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_width="@dimen/plus_minus_Btn_width"
+                    android:layout_height="@dimen/plus_minus_Btn_height"
                     android:background="@drawable/btn_score"
                     android:text="-"
                     android:textColor="@color/coloryellownew"
@@ -343,8 +343,8 @@
 
                 <Button
                     android:id="@+id/Btn_terz_plus"
-                    android:layout_width="@dimen/plus_minus_Btn_size"
-                    android:layout_height="@dimen/plus_minus_Btn_size"
+                    android:layout_width="@dimen/plus_minus_Btn_width"
+                    android:layout_height="@dimen/plus_minus_Btn_height"
                     android:layout_marginEnd="20sp"
                     android:background="@drawable/btn_score"
                     android:text="+"
