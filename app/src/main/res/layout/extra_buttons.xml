@@ -88,45 +88,7 @@
         android:paddingLeft="10dp">
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:paddingBottom="2dp"
-                android:paddingTop="2dp"
-                android:text="4 paper"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/card_text_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/press"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="50dp"
-                android:text="Press"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/card_text_size"
-
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="15dp"
-            android:background="@color/colorBlack" />
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -138,7 +100,7 @@
                 android:id="@+id/txtView_blot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="5dp"
                 android:text="@string/blot"
                 android:textColor="@color/colorBlack"
 
@@ -174,7 +136,7 @@
                 android:id="@+id/txtView_terz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="5dp"
                 android:text="@string/terz"
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/card_text_size"
@@ -234,117 +196,39 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/txtView_50"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/hitsun"
+                android:layout_marginStart="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="Combination"
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/card_text_size"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
-            <ImageButton
-                android:id="@+id/btn_50_minus"
-                android:layout_width="@dimen/plus_minus_Btn_width"
-                android:layout_height="@dimen/plus_minus_Btn_height"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/btn_score"
-                android:src="@drawable/ic_remove_yelow_24dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/txtView_50_Qanak"
-                app:layout_constraintTop_toTopOf="parent" />
-
             <TextView
-                android:id="@+id/txtView_50_Qanak"
+                android:id="@+id/press"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:text="0"
-                android:textSize="25sp"
-                app:layout_constraintEnd_toStartOf="@+id/btn_50_plus"
-                tools:ignore="MissingConstraints" />
+                android:layout_marginEnd="50dp"
+                android:text="Press"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/card_text_size"
 
-            <ImageButton
-
-                android:id="@+id/btn_50_plus"
-                android:layout_width="@dimen/plus_minus_Btn_width"
-                android:layout_height="@dimen/plus_minus_Btn_height"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/btn_score"
-                android:src="@drawable/ic_add_yelow_24dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
         <View
-            android:id="@+id/view3"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="15dp"
             android:background="@color/colorBlack" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintTop_toBottomOf="@+id/view3">
-
-            <TextView
-                android:id="@+id/txtView_sto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/sto"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/card_text_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-            <ImageButton
-                android:id="@+id/btn_sto_minus"
-                android:layout_width="@dimen/plus_minus_Btn_width"
-                android:layout_height="@dimen/plus_minus_Btn_height"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/btn_score"
-                android:src="@drawable/ic_remove_yelow_24dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/txtView_100_Qanak"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/txtView_100_Qanak"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:text="0"
-                android:textSize="25sp"
-                app:layout_constraintEnd_toStartOf="@+id/btn_100_plus"
-                tools:ignore="MissingConstraints" />
-
-            <ImageButton
-
-                android:id="@+id/btn_100_plus"
-                android:layout_width="@dimen/plus_minus_Btn_width"
-                android:layout_height="@dimen/plus_minus_Btn_height"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/btn_score"
-
-                android:src="@drawable/ic_add_yelow_24dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </LinearLayout>
@@ -353,6 +237,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/KP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="3"
+                android:background="@drawable/btn_score"
+                android:ems="3"
+                android:gravity="center"
+                android:text="k"
+                android:textColor="@color/coloryellownew"
+                android:textSize="@dimen/tver_Btn_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Btn_tk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="3"
+                android:background="@drawable/btn_score"
+                android:ems="3"
+                android:gravity="center"
+                android:text="TK"
+                android:textColor="@color/coloryellownew"
+                android:textSize="@dimen/tver_Btn_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
 
         <LinearLayout
