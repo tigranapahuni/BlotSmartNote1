@@ -17,5 +17,6 @@
     <string name="sto">Hundred</string>
     <string name="blot">Blot</string>
     <string name="fourpaper">4 cards</string>
+    <string name="attention_toast">The declared number must be greater than the 7th</string>
 
 </resources>

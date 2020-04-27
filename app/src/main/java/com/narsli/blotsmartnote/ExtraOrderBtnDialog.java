@@ -4,11 +4,14 @@ import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -24,8 +27,9 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
     Boolean kaput_banali = false,
             quansh_banali = false,
             kontr_banali = false;
-    int mast_banali;
+    int mast_banali, temp_tiv;
     String order = "0";
+
 
     private BottomSheetListenerOrder mListener;//mer sarqac interfeysi ekzempliar
 //--------------------------------------------------------------------------
@@ -35,7 +39,9 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.order_extra_btns, container, false);
-
+//----------------
+//        order = "0";
+//----------------------
         btn_1 = v.findViewById(R.id.Btn_1);
         btn_2 = v.findViewById(R.id.Btn_2);
         btn_3 = v.findViewById(R.id.Btn_3);
@@ -61,11 +67,19 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
         ImgBtn_Ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//mer sarqac interfeysi realizacia` onButtonClicked- metodi realizacia
 
-                mListener.orderon_onButtonClicked(mast_banali, order);
-                //miangamic pakel nerqevi toxi
-                dismiss();
+                temp_tiv = Character.getNumericValue(order.charAt(0));
+
+                if (order.length() == 1 & temp_tiv < 8) {
+                    Toast.makeText(getContext(), R.string.attention_toast,
+                            Toast.LENGTH_SHORT).show();
+                }//ete xozn 7-ic poqr en xosacel
+                else {
+                    mListener.orderon_onButtonClicked(mast_banali, order);
+
+                    //miangamic pakel nerqevi toxi
+                    dismiss();
+                }
             }
         });
 //---------------------------------------------------------------------
@@ -201,68 +215,73 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
         btn_K.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (kaput_banali) {
-                    //---------------------------------------------
-                    try {
-                        // int tiv= Integer.parseInt(order);
-                        if (order.length() == 3)
-                            order = order.substring(0, order.length() - 1);
-                        else
-                            order = "0";
-                    } catch (ClassCastException e) {
-                        throw new ClassCastException();
-                    }
-                    //------------------------------------
-                    // order = "0";
-                    btn_K.setBackgroundResource(R.color.colorBlack);
-                } else {
+                if (order.indexOf('x') == -1) {//ete quanshac e arden kapuyt chka
+                    if (kaput_banali) {
+                        //---------------------------------------------
+                        try {
+                            // int tiv= Integer.parseInt(order);
+                            if (order.length() >= 2) {
+                                if (order.indexOf('K') != -1)
+                                    order = order.substring(0, order.length() - 1);
+                            } else
+                                order = "0";
+                        } catch (ClassCastException e) {
+                            throw new ClassCastException();
+                        }
+                        //------------------------------------
+                        // order = "0";
+                        btn_K.setBackgroundResource(R.color.colorBlack);
+                    } else {
 //---------------------------------------------
-                    try {
-                        int tiv = Integer.parseInt(order);
-                        if (tiv > 25)
-                            order = order + "K";
-                        else
-                            order = "K";
-                    } catch (ClassCastException e) {
-                        throw new ClassCastException();
-                    }
+                        try {
+                            int tiv = Integer.parseInt(order);
+                            if (tiv > 25)
+                                order = order + "K";
+                            else
+                                order = "K";
+                        } catch (ClassCastException e) {
+                            throw new ClassCastException();
+                        }
 //------------------------------------
-                    //order = "K";
+                        mListener.orderon_onButtonClicked(mast_banali, order);
+                        btn_K.setBackgroundResource(R.color.colorBlue);
+                    }
+                    kaput_banali = !kaput_banali;
                     mListener.orderon_onButtonClicked(mast_banali, order);
-                    btn_K.setBackgroundResource(R.color.colorBlue);
                 }
-                kaput_banali = !kaput_banali;
-                mListener.orderon_onButtonClicked(mast_banali, order);
             }
         });
 //------------------------------------------------------------------
 //---------------------------------------------
-//        try {
-//            int tiv= Integer.parseInt(order);
-//            if (tiv>25)
-//                order =order+ "K";
-//            else
-//                order= "K";
-//        } catch (ClassCastException e) {
-//            throw new ClassCastException();
-//        }
-//------------------------------------
         btn_x2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (order != "0" & Integer.parseInt(order) > 7) {
+                temp_tiv = Character.getNumericValue(order.charAt(0));
+
+//------------------------------------
+                if (order.length() == 1 & temp_tiv < 8) {
+                    Toast.makeText(getContext(), R.string.attention_toast,
+                            Toast.LENGTH_SHORT).show();
+                }//ete xozn 7-ic poqr en xosacel
+                else {
+
                     if (quansh_banali) {
                         btn_x2.setTextColor(getResources().getColor(R.color.coloryellownew));
                         btn_x4.setTextColor(getResources().getColor(R.color.coloryellownew));
                         kontr_banali = false;
+                        order = order.substring(0, order.length() - 2);
                     } else if (quansh_banali == false | kontr_banali == true) {
+                        if (order.indexOf("x4") != -1)
+                            order = order.substring(0, order.length() - 2);
+
                         btn_x2.setTextColor(getResources().getColor(R.color.colorRed));
                         btn_x4.setTextColor(getResources().getColor(R.color.coloryellownew));
                         kontr_banali = false;
-                        if (order != null)
-                            order = order + "x2";
+                        order = order + "x2";
                     }
+
                     quansh_banali = !quansh_banali;
+                    mListener.orderon_onButtonClicked(mast_banali, order);
                 }
             }
         });
@@ -270,19 +289,30 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
         btn_x4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (order != "0" & Integer.parseInt(order) > 7) {
+                temp_tiv = Character.getNumericValue(order.charAt(0));
+
+//------------------------------------
+                if (order.length() == 1 & temp_tiv < 8) {
+                    Toast.makeText(getContext(), R.string.attention_toast,
+                            Toast.LENGTH_SHORT).show();
+                }//ete xozn 7-ic poqr en xosacel
+                else {
                     if (kontr_banali) {
                         btn_x2.setTextColor(getResources().getColor(R.color.coloryellownew));
                         btn_x4.setTextColor(getResources().getColor(R.color.coloryellownew));
                         quansh_banali = false;
+                        order = order.substring(0, order.length() - 2);
                     } else {
+                        if (order.indexOf("x2") != -1)
+                            order = order.substring(0, order.length() - 2);
                         quansh_banali = false;
-                        if (order != null)
-                            order = order + "x4";
+                        //  if (order != null)
+                        order = order + "x4";
                         btn_x4.setTextColor(getResources().getColor(R.color.colorRed));
                         btn_x2.setTextColor(getResources().getColor(R.color.coloryellownew));
                     }
                     kontr_banali = !kontr_banali;
+                    mListener.orderon_onButtonClicked(mast_banali, order);
                 }
             }
         });

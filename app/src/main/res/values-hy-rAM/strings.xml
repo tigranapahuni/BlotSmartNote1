@@ -16,4 +16,5 @@
     <string name="sto">Հարյուր</string>
     <string name="blot">Բլոտ</string>
     <string name="fourpaper">4 քարտ</string>
+    <string name="attention_toast">Հայտարարված թիվը պետք է լինի 7-ից մեծ</string>
 </resources>

@@ -16,6 +16,7 @@
     <string name="sto">Сто</string>
     <string name="blot">Блот</string>
     <string name="fourpaper">4 карты</string>
+    <string name="attention_toast">Заявленное число должно быть больше 7-й</string>
 
 
 </resources>
