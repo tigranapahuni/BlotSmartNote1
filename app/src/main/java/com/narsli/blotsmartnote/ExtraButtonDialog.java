@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,6 +34,7 @@ import java.util.List;
      {
 
          private Dialog dialog;
+         private ImageView ImgeViw_close, ImgBtn_Ok;
          private BottomSheetListener mListener;//mer sarqac interfeysi ekzempliar
 //--------------------------------------------------------------------------
 
@@ -63,6 +65,8 @@ import java.util.List;
 
             TextView press = v.findViewById(R.id.press);
             Button btn_2 = v.findViewById(R.id.Btn_2);
+            ImgeViw_close = dialog.findViewById(R.id.ImgeViw_closeX);
+            ImgBtn_Ok = dialog.findViewById(R.id.ImgBtn_Ok);
 //            EditText editText= v.findViewById(R.id.EditText_Order);
 //------------------
 
@@ -76,16 +80,24 @@ import java.util.List;
 //                dismiss();
                 }
             });
-            btn_2.setOnClickListener(new View.OnClickListener() {
+            ImgeViw_close.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 //mer sarqac interfeysi realizacia` onButtonClicked- metodi realizacia
                     dialog.dismiss();
-                    mListener.onButtonClicked("Button 2 clicked");
+                    // mListener.onButtonClicked("Button 2 clicked");
                     //dismiss();
                 }
             });
-
+            ImgBtn_Ok.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+//mer sarqac interfeysi realizacia` onButtonClicked- metodi realizacia
+                    dialog.dismiss();
+                    // mListener.onButtonClicked("Button 2 clicked");
+                    //dismiss();
+                }
+            });
             return v;
         }
 //-----------------------------------------------------------
