@@ -17,4 +17,12 @@
     <dimen name="plus_minus_Btn_height">20dp</dimen>
     <dimen name="plus_minus_Btn_size">20dp</dimen>
     <dimen name="card_text_size">20sp</dimen>
+
+    ______________________________________________________________________
+
+    <dimen name="large_tver_Btn_size">40sp</dimen>
+
+    -----------------------------------------------------------------------
+
+
 </resources>

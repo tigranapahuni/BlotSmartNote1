@@ -346,7 +346,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="148dp"
-        app:srcCompat="@drawable/ic_close_black_24dp" />
+        app:srcCompat="@drawable/ic_close_black_24dp"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabOne"
