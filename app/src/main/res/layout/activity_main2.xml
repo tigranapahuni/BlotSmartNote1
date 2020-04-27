@@ -345,8 +345,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="60dp"
-
-
         android:tint="@android:color/white"
         app:fabSize="mini"
         app:srcCompat="@drawable/ic_add_yelow_24dp"
