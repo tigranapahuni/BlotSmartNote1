@@ -349,7 +349,7 @@
 
         android:tint="@android:color/white"
         app:fabSize="mini"
-        app:srcCompat="@drawable/ic_add_black_24dp"
+        app:srcCompat="@drawable/ic_add_yelow_24dp"
         tools:ignore="VectorDrawableCompat" />
 
 </RelativeLayout>

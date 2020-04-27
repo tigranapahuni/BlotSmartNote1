@@ -520,7 +520,7 @@
                 android:background="@drawable/btn_score"
                 android:ems="3"
                 android:gravity="center"
-                android:src="@drawable/ic_arrow_back_yelow_24dp" />
+                android:src="@drawable/ic_arrow_back_yellow_24dp" />
 
             <Button
                 android:id="@+id/Btn_0"
@@ -545,7 +545,7 @@
                 android:background="@drawable/btn_score"
                 android:ems="3"
                 android:gravity="center"
-                android:src="@drawable/ic_check_yelow_24dp" />
+                android:src="@drawable/ic_check_yellow_24dp" />
 
 
         </LinearLayout>

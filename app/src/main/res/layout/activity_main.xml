@@ -15,25 +15,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/cardView_padding"
-            android:layout_marginRight="@dimen/cardView_padding"
-            android:foreground="?android:attr/selectableItemBackground">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
+                android:layout_marginLeft="@dimen/cardView_padding"
+                android:layout_marginRight="@dimen/cardView_padding"
                 android:orientation="horizontal">
+
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="3"
                     android:background="@color/colorBlack"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <Button
@@ -43,6 +41,7 @@
                         android:background="@android:color/transparent"
                         android:text="@string/player1"
                         android:textAllCaps="false"
+                        android:ems="3"
                         android:textStyle="bold"
                         android:textColor="@color/coloryellownew"
                         android:textSize="@dimen/player_size" />
@@ -178,7 +177,6 @@
                         android:id="@+id/txt_announce"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:clickable="true"
                         android:text="@string/announce"
                         android:textAllCaps="false"
                         android:textStyle="bold"
@@ -188,7 +186,6 @@
                 </RelativeLayout>
 
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
 
         <View
             android:id="@+id/line_menu"
@@ -201,7 +198,10 @@
         android:id="@+id/scrollView_Result"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        android:layout_below="@id/linearLayout_menu_med_line">
+        android:layout_below="@id/linearLayout_menu_med_line"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="0dp">
 
         <LinearLayout
             android:id="@+id/ResultLayout"
@@ -248,18 +248,18 @@
                         android:id="@+id/Img_mast"
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/x_24"
-                        android:onClick="open_extra_Order_buttons" />
+                        android:onClick="open_extra_Order_buttons"
+                        android:src="@drawable/x_24" />
 
                     <TextView
                         android:id="@+id/txtView_order"
                         android:layout_width="wrap_content"
                         android:layout_height="45dp"
-                        android:gravity="center"
                         android:ems="2"
+                        android:gravity="center"
                         android:hint="@string/order"
-                        android:textSize="20sp"
-                        android:onClick="open_extra_Order_buttons" />
+                        android:onClick="open_extra_Order_buttons"
+                        android:textSize="20sp" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -333,17 +333,48 @@
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabThree"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="189dp"
+        app:srcCompat="@drawable/ic_check_yellow_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTwo"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="148dp"
+        app:srcCompat="@drawable/ic_close_yellow_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabOne"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="107dp"
+        app:srcCompat="@drawable/ic_arrow_back_yellow_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="60dp"
-
-        android:tint="@android:color/white"
-        app:fabSize="mini"
-        app:srcCompat="@drawable/ic_add_black_24dp"
-        tools:ignore="VectorDrawableCompat" />
+        android:layout_marginBottom="50dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_add_yelow_24dp" />
 
 </RelativeLayout>

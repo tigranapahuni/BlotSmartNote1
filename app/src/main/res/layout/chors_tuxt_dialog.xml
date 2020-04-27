@@ -35,7 +35,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_close_24dp" />
+                app:srcCompat="@drawable/ic_close_yellow_24dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -222,7 +222,7 @@
             android:background="@drawable/btn_score"
             android:gravity="center"
             android:padding="15dp"
-            android:src="@drawable/ic_check_yelow_24dp" />
+            android:src="@drawable/ic_check_yellow_24dp" />
 
     </LinearLayout>
 

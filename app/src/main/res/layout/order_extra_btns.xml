@@ -295,7 +295,7 @@
                 android:gravity="center"
                 android:layout_weight="3"
                 android:layout_margin="1dp"
-                android:src="@drawable/ic_arrow_back_yelow_24dp"
+                android:src="@drawable/ic_arrow_back_yellow_24dp"
                 android:ems="3"
                 android:background="@drawable/btn_score" />
 
@@ -320,7 +320,7 @@
                 android:layout_weight="3"
                 android:gravity="center"
                 android:layout_margin="1dp"
-                android:src="@drawable/ic_check_yelow_24dp"
+                android:src="@drawable/ic_check_yellow_24dp"
                 android:ems="3"
                 android:background="@drawable/btn_score" />
 
