@@ -30,17 +30,20 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
          CheckBox chckBx_tuz, chckBx_valet,
                  chckBx_9, chckBx_BLot;
          ImageButton imgbtn_terz_minus, imgbtn_terz_plus;
-         EditText editTxt_taracMiavor;
+
          Boolean kaput_banali = false, tak_banali = false;
          private Dialog dialog;
          private ImageView imgBtn_Back, imgBtn_Ok;
          TextView txtView_Extra, txtView_terz_Qanak,
                  txtViw_Extra, txtView_combination,
-                 txtViw_ArdyunqMiavor;
-         String order = "0", combination, tarac_itog;
+                 txtViw_ArdyunqMiavor, editTxt_taracMiavor;
+         String order = "0";
+         int combination = 0, tarac_itog;
          //         byte kom1_kom2;
          private BottomSheetListener mListener;//mer sarqac interfeysi ekzempliar
-//--------------------------------------------------------------------------
+         private int temp_tiv, temp_tiv1;
+
+         //--------------------------------------------------------------------------
 //konstruktor
 //public  ExtraButtonDialog(byte kom1_kom2)
 //{
@@ -84,6 +87,75 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
             imgbtn_terz_minus = v.findViewById(R.id.Imgbtn_terz_minus);
             imgbtn_terz_plus = v.findViewById(R.id.Imgbtn_terz_plus);
             editTxt_taracMiavor = v.findViewById(R.id.editTxt_taracMiavor);
+//-------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------
+
+
+//            CharSequence cs = String.valueOf(number);
+//            imgbtn_terz_minus, imgbtn_terz_plus;
+//            EditText editTxt_taracMiavor;
+//            txtView_terz_Qanak
+//-------------------------------------------------------------------------------
+            imgbtn_terz_plus.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        temp_tiv = Integer.parseInt(txtView_terz_Qanak.getText().toString());
+                        temp_tiv1 = Integer.parseInt(order);
+                    } catch (ClassCastException e) {
+                        throw new ClassCastException();
+                    }
+
+                    if (!txtView_terz_Qanak.getText().equals("4")) {
+                        combination = combination + 2;
+                        txtView_terz_Qanak.setText("" + (temp_tiv + 1));
+                        txtView_combination.setText("" + combination);
+                        txtViw_ArdyunqMiavor.setText("" + (temp_tiv1 + combination));
+                    }
+                }
+
+            });
+//-------------------------------------------------------------------------------
+            imgbtn_terz_minus.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        temp_tiv = Integer.parseInt(txtView_terz_Qanak.getText().toString());
+                        temp_tiv1 = Integer.parseInt(order);
+                    } catch (ClassCastException e) {
+                        throw new ClassCastException();
+                    }
+
+                    if (!txtView_terz_Qanak.getText().equals("0")) {
+                        txtView_terz_Qanak.setText("" + (temp_tiv - 1));
+                        combination = combination - 2;
+                        txtView_combination.setText("" + combination);
+                        txtViw_ArdyunqMiavor.setText("" + (temp_tiv1 + combination));
+                    }
+
+                }
+
+            });
+//-------------------------------------------------------------------------------
+            chckBx_BLot.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    try {
+                        temp_tiv1 = Integer.parseInt(order);
+                    } catch (ClassCastException e) {
+                        throw new ClassCastException();
+                    }
+
+                    if (chckBx_BLot.isChecked()) {
+                        combination = combination + 2;
+                        // txtView_combination.setText(combination);
+                    } else
+                        combination = combination - 2;
+                    txtView_combination.setText("" + combination);
+                    txtViw_ArdyunqMiavor.setText("" + (temp_tiv1 + combination));
+                }
+            });
 //-------------------------------------------------------------------------------
             btn_tk.setOnClickListener(new View.OnClickListener() {
                 @Override
