@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements
 //--------------------------- POPOXAKANNER ----------------------------
     private TextView txtView_kom1, txtView_kom2, txtView_order;
     private ImageView Img_mast;
-//    private Dialog dialog;
+    byte kom1_kom2;
 //_____________________________________________________________________
 //___________________________menu popoxakanner ________________________
 
@@ -86,9 +86,10 @@ public class MainActivity extends AppCompatActivity implements
     // interfeysi metodi pereopreedlyactia
     @Override
     public void onButtonClicked(String kom1_kom2_miavor) {
-
-        txtView_kom1.setText(kom1_kom2_miavor);
-        txtView_kom2.setText(kom1_kom2_miavor);
+        if (kom1_kom2 == 1)
+            txtView_kom1.setText(kom1_kom2_miavor);
+        else
+            txtView_kom2.setText(kom1_kom2_miavor);
     }
 
     //-----------------------------------------------------------------------------
@@ -114,15 +115,33 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     //_____________________________________________________________________
-    //------------------------------------------------------------
-    public void open_extra_buttons(View view) {
 
+
+    public void open_extra_buttons_Team1(View view) {
+        kom1_kom2 = 1;
 //activity-ic dialog info poxancelu hamar e
         //        //mer sarqac interfeysi ekzempliar
-            ExtraButtonDialog bottomSheet = new ExtraButtonDialog();
-            bottomSheet.show(getSupportFragmentManager(), "exampleBottomSheet");
-
+        ExtraButtonDialog bottomSheet = new ExtraButtonDialog();
+        bottomSheet.show(getSupportFragmentManager(), "exampleBottomSheet");
     }
+
+    //------------------------------------------------------------------------------
+    public void open_extra_buttons_Team2(View view) {
+        kom1_kom2 = 2;
+//activity-ic dialog info poxancelu hamar e
+        //        //mer sarqac interfeysi ekzempliar
+        ExtraButtonDialog bottomSheet = new ExtraButtonDialog();
+        bottomSheet.show(getSupportFragmentManager(), "exampleBottomSheet");
+    }
+    //------------------------------------------------------------
+//    public void open_extra_buttons(View view) {
+//
+////activity-ic dialog info poxancelu hamar e
+//        //        //mer sarqac interfeysi ekzempliar
+//            ExtraButtonDialog bottomSheet = new ExtraButtonDialog();
+//            bottomSheet.show(getSupportFragmentManager(), "exampleBottomSheet");
+//
+//    }
 
     public void open_extra_Order_buttons(View view) {
 
@@ -215,6 +234,7 @@ public class MainActivity extends AppCompatActivity implements
         }
 
     }
+
 //_________________________________________________________________________
 
 }

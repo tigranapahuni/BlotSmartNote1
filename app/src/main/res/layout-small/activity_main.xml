@@ -226,7 +226,8 @@
                     android:layout_weight="33"
                     android:gravity="center"
                     android:hint="0"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="open_extra_buttons_Team1" />
 
                 <TextView
                     android:id="@+id/txtView_kom2"
@@ -235,7 +236,8 @@
                     android:layout_weight="33"
                     android:gravity="center"
                     android:hint="0"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="open_extra_buttons_Team2" />
 
 
                 <ImageView
@@ -275,14 +277,14 @@
         <TextView
             android:id="@+id/txtView_1"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="21dp"
             android:layout_weight="3"
             android:background="@color/colorBlack"
             android:clickable="false"
             android:gravity="center"
+            android:onClick="open_extra_buttons_Team1"
             android:text="@string/team1"
             android:textColor="@color/coloryellownew"
-            android:onClick="open_extra_buttons"
             android:textSize="15sp" />
 
 
@@ -301,7 +303,7 @@
             android:gravity="center"
             android:text="@string/team2"
             android:textColor="@color/coloryellownew"
-            android:onClick="open_extra_buttons"
+            android:onClick="open_extra_buttons_Team2"
             android:textSize="15sp" />
 
 
