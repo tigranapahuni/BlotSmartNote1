@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,16 +15,17 @@
         android:layout_marginEnd="10dp"
         android:orientation="horizontal">
 
+
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/editTxt_taracMiavor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="3"
             android:gravity="center"
+            android:hint="0"
             android:inputType="number"
-            android:text="16"
-            android:textSize="40sp"/>
+            android:textSize="40sp" />
 
         <TextView
             android:id="@+id/textView111"
@@ -39,14 +39,14 @@
 
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/txtView_combination"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="3"
             android:gravity="center"
+            android:hint="0"
             android:inputType="number"
-            android:text="5"
             android:textSize="40sp" />
 
         <TextView
@@ -61,14 +61,14 @@
 
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/txtViw_ArdyunqMiavor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="3"
             android:gravity="center"
+            android:hint="0"
             android:inputType="number"
-            android:text="11"
             android:textSize="40sp" />
 
 
@@ -106,8 +106,9 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/chckBx_BLot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="95dp"
@@ -146,7 +147,7 @@
 
 
             <ImageButton
-                android:id="@+id/btn_terz_minus"
+                android:id="@+id/Imgbtn_terz_minus"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginEnd="20dp"
@@ -164,13 +165,13 @@
                 android:text="0"
                 android:textSize="40sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_terz_plus"
+                app:layout_constraintEnd_toStartOf="@+id/Imgbtn_terz_plus"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <ImageButton
 
-                android:id="@+id/btn_terz_plus"
+                android:id="@+id/Imgbtn_terz_plus"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginEnd="40dp"
@@ -197,7 +198,7 @@
 
 
             <TextView
-                android:id="@+id/press"
+                android:id="@+id/TxtViw_Extra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="40dp"
@@ -216,7 +217,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
     </LinearLayout>
 
     <LinearLayout
@@ -230,10 +230,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-
-
             <Button
-                android:id="@+id/KP"
+                android:id="@+id/Btn_KP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"

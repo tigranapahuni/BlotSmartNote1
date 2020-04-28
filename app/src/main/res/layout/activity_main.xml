@@ -219,6 +219,7 @@
                 android:gravity="center">
 
                 <TextView
+                    android:id="@+id/txtView_kom1"
                     android:layout_width="0dp"
                     android:layout_height="45dp"
                     android:layout_weight="33"
@@ -227,6 +228,7 @@
                     android:textSize="20sp" />
 
                 <TextView
+                    android:id="@+id/txtView_kom2"
                     android:layout_width="0dp"
                     android:layout_height="45dp"
                     android:layout_weight="33"

@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity implements
         View.OnClickListener {
     //_____________________________________________________________________
 //--------------------------- POPOXAKANNER ----------------------------
-    private TextView txtView_order;
+    private TextView txtView_kom1, txtView_kom2, txtView_order;
     private ImageView Img_mast;
-    private Dialog dialog;
+//    private Dialog dialog;
 //_____________________________________________________________________
 //___________________________menu popoxakanner ________________________
 
@@ -49,7 +49,12 @@ public class MainActivity extends AppCompatActivity implements
         initFabMenu();
 //------------------
         txtView_order = findViewById(R.id.txtView_order);
+        txtView_kom1 = findViewById(R.id.txtView_kom1);
+        txtView_kom2 = findViewById(R.id.txtView_kom2);
         Img_mast = findViewById(R.id.Img_mast);
+
+        // txtView_kom1.setText("kom1_kom2_miavor");
+        // txtView_kom1.setText("kom1_kom2_miavor");
 ////--------------------------------------------------------------------------
 //        //dialog
 //        dialog=new Dialog(this);//stexcum enq dialog
@@ -80,12 +85,14 @@ public class MainActivity extends AppCompatActivity implements
     //--------------------------------------------------------------------
     // interfeysi metodi pereopreedlyactia
     @Override
-    public void onButtonClicked(String text) {
+    public void onButtonClicked(String kom1_kom2_miavor) {
 
-        //mTextView.setText(text);
+        txtView_kom1.setText(kom1_kom2_miavor);
+        txtView_kom2.setText(kom1_kom2_miavor);
     }
 
-    public void orderon_onButtonClicked(int mast, String order) {
+    //-----------------------------------------------------------------------------
+    public void order_OnButtonClicked(int mast, String order) {
         txtView_order.setText(order);
         switch (mast) {
             case 0:
