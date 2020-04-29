@@ -19,9 +19,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/cardView_padding"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="@dimen/cardView_padding"
             android:orientation="horizontal">
 
 
@@ -350,12 +347,12 @@
         android:id="@+id/fabFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="4dp"
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/fabThree"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_check_yellow_24dp"
+        app:srcCompat="@drawable/ic_share_yellow_24dp"
         tools:ignore="VectorDrawableCompat" />
 
 
@@ -382,12 +379,12 @@
         android:id="@+id/fabThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="4dp"
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/fabTwo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_check_yellow_24dp"
+        app:srcCompat="@drawable/ic_color_lens_yellow_24dp"
         tools:ignore="VectorDrawableCompat" />
 
 
@@ -414,12 +411,12 @@
         android:id="@+id/fabTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="4dp"
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/fabOne"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_check_yellow_24dp" />
+        app:srcCompat="@drawable/ic_language_yellow_24dp" />
 
 
     <TextView
@@ -445,7 +442,7 @@
         android:id="@+id/fabOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="4dp"
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/fabMain"

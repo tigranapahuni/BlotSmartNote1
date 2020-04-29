@@ -19,9 +19,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/cardView_padding"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="@dimen/cardView_padding"
             android:orientation="horizontal">
 
 
@@ -46,6 +43,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/igrok1_D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -76,6 +74,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/igrok2_D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -112,6 +111,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/igrok3_D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -143,6 +143,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/igrok4_D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -182,6 +183,7 @@
                     android:textStyle="bold" />
             </RelativeLayout>
 
+
         </LinearLayout>
 
         <View
@@ -194,12 +196,12 @@
     <ScrollView
         android:id="@+id/scrollView_Result"
         android:layout_width="match_parent"
-        android:layout_height="621dp"
+        android:layout_height="0dp"
         android:layout_below="@id/linearLayout_menu_med_line"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="64dp"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_menu_med_line">
 
         <LinearLayout
             android:id="@+id/ResultLayout"
@@ -262,7 +264,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_below="@id/txt_player1"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:background="@color/colorBlack60" />
@@ -284,7 +285,8 @@
 
 
         <TextView
-            android:id="@+id/txtView_1"
+            android:enabled="false"
+            android:id="@+id/txtView_Team1"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_weight="3"
@@ -304,7 +306,8 @@
             android:background="@color/coloryellownew" />
 
         <TextView
-            android:id="@+id/txtView_2"
+            android:enabled="false"
+            android:id="@+id/txtView_Team2"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_weight="3"
@@ -324,11 +327,11 @@
             android:background="@color/coloryellownew" />
 
         <TextView
-            android:id="@+id/tnm_order"
+            android:id="@+id/txtView_zakaz"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_weight="3"
-            android:background="@color/colorBlack"
+            android:background="@color/colorRed"
             android:clickable="false"
             android:gravity="center"
             android:onClick="open_extra_Order_buttons"
@@ -344,12 +347,12 @@
         android:id="@+id/fabFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="4dp"
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/fabThree"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_check_yellow_24dp"
+        app:srcCompat="@drawable/ic_share_yellow_24dp"
         tools:ignore="VectorDrawableCompat" />
 
 
@@ -376,12 +379,12 @@
         android:id="@+id/fabThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="4dp"
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/fabTwo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_check_yellow_24dp"
+        app:srcCompat="@drawable/ic_color_lens_yellow_24dp"
         tools:ignore="VectorDrawableCompat" />
 
 
@@ -408,12 +411,12 @@
         android:id="@+id/fabTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="4dp"
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/fabOne"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_check_yellow_24dp" />
+        app:srcCompat="@drawable/ic_language_yellow_24dp" />
 
 
     <TextView
@@ -439,7 +442,7 @@
         android:id="@+id/fabOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="4dp"
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/fabMain"
@@ -475,7 +478,7 @@
         app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:srcCompat="@drawable/ic_add_yelow_24dp" />
+        app:srcCompat="@drawable/ic_more_vert_yellow_24dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
