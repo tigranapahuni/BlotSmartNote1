@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity implements
 //_____________________________________________________________________
 //___________________________menu popoxakanner ________________________
 
-    FloatingActionButton fabMain, fabOne, fabTwo, fabThree;
+    FloatingActionButton fabMain, fabOne, fabTwo, fabThree, fabFour;
+    TextView fabTextNg, fabTextEng, fabTextTheme, fabTextShare;
     Float translationY = 100f;
 
     OvershootInterpolator interpolator = new OvershootInterpolator();
@@ -181,19 +182,46 @@ public class MainActivity extends AppCompatActivity implements
         fabOne = findViewById(R.id.fabOne);
         fabTwo = findViewById(R.id.fabTwo);
         fabThree = findViewById(R.id.fabThree);
+        fabFour = findViewById(R.id.fabFour);
+        fabTextNg = findViewById(R.id.fabTextNg);
+        fabTextEng = findViewById(R.id.fabTextEng);
+        fabTextTheme = findViewById(R.id.fabTextTheme);
+        fabTextShare = findViewById(R.id.fabTextShare);
+
+
+
+
+
+
 
         fabOne.setAlpha(0f);
         fabTwo.setAlpha(0f);
         fabThree.setAlpha(0f);
+        fabFour.setAlpha(0f);
+        fabTextNg.setAlpha(0f);
+        fabTextEng.setAlpha(0f);
+        fabTextTheme.setAlpha(0f);
+        fabTextShare.setAlpha(0f);
+
 
         fabOne.setTranslationY(translationY);
         fabTwo.setTranslationY(translationY);
         fabThree.setTranslationY(translationY);
+        fabFour.setTranslationY(translationY);
+        fabTextNg.setTranslationY(translationY);
+        fabTextEng.setTranslationY(translationY);
+        fabTextTheme.setTranslationY(translationY);
+        fabTextShare.setTranslationY(translationY);
 
         fabMain.setOnClickListener(this);
         fabOne.setOnClickListener(this);
         fabTwo.setOnClickListener(this);
         fabThree.setOnClickListener(this);
+        fabFour.setOnClickListener(this);
+        fabTextNg.setOnClickListener(this);
+        fabTextEng.setOnClickListener(this);
+        fabTextTheme.setOnClickListener(this);
+        fabTextShare.setOnClickListener(this);
     }
 
     private void openMenu() {
@@ -204,6 +232,11 @@ public class MainActivity extends AppCompatActivity implements
         fabOne.animate().translationY(0f).alpha(1f).setInterpolator(interpolator).setDuration(300).start();
         fabTwo.animate().translationY(0f).alpha(1f).setInterpolator(interpolator).setDuration(300).start();
         fabThree.animate().translationY(0f).alpha(1f).setInterpolator(interpolator).setDuration(300).start();
+        fabFour.animate().translationY(0f).alpha(1f).setInterpolator(interpolator).setDuration(300).start();
+        fabTextNg.animate().translationY(0f).alpha(1f).setInterpolator(interpolator).setDuration(300).start();
+        fabTextEng.animate().translationY(0f).alpha(1f).setInterpolator(interpolator).setDuration(300).start();
+        fabTextTheme.animate().translationY(0f).alpha(1f).setInterpolator(interpolator).setDuration(300).start();
+        fabTextShare.animate().translationY(0f).alpha(1f).setInterpolator(interpolator).setDuration(300).start();
 
 
     }
@@ -216,6 +249,12 @@ public class MainActivity extends AppCompatActivity implements
         fabOne.animate().translationY(translationY).alpha(0f).setInterpolator(interpolator).setDuration(300).start();
         fabTwo.animate().translationY(translationY).alpha(0f).setInterpolator(interpolator).setDuration(300).start();
         fabThree.animate().translationY(translationY).alpha(0f).setInterpolator(interpolator).setDuration(300).start();
+        fabFour.animate().translationY(translationY).alpha(0f).setInterpolator(interpolator).setDuration(300).start();
+        fabTextNg.animate().translationY(translationY).alpha(0f).setInterpolator(interpolator).setDuration(300).start();
+        fabTextEng.animate().translationY(translationY).alpha(0f).setInterpolator(interpolator).setDuration(300).start();
+        fabTextTheme.animate().translationY(translationY).alpha(0f).setInterpolator(interpolator).setDuration(300).start();
+        fabTextShare.animate().translationY(translationY).alpha(0f).setInterpolator(interpolator).setDuration(300).start();
+
 
     }
 
@@ -249,6 +288,21 @@ public class MainActivity extends AppCompatActivity implements
                 break;
             case R.id.fabThree:
                 //Log.i(TAG, "onClick: fab three");
+                break;
+            case R.id.fabFour:
+                //Log.i(TAG, "onClick: fab four");
+                break;
+            case R.id.fabTextNg:
+                //Log.i(TAG, "onClick: fab four");
+                break;
+            case R.id.fabTextEng:
+                //Log.i(TAG, "onClick: fab four");
+                break;
+            case R.id.fabTextTheme:
+                //Log.i(TAG, "onClick: fab four");
+                break;
+            case R.id.fabTextShare:
+                //Log.i(TAG, "onClick: fab four");
                 break;
         }
 

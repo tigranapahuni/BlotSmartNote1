@@ -263,8 +263,18 @@
                     android:onClick="open_extra_Order_buttons"
                     android:textSize="40sp" />
 
-
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txt_player1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorBlack60"
+                />
+
+
         </LinearLayout>
     </ScrollView>
 
@@ -341,31 +351,33 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="280dp">
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="392dp">
 
         <TextView
+            android:id="@+id/fabTextFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textColor="@color/coloryellownew"
-            android:background="@drawable/btn_score"
-            android:text="Share"
-            android:textStyle="bold"
-            android:ems="6"
             android:layout_gravity="center_vertical"
             android:layout_marginEnd="-10dp"
+            android:background="@drawable/btn_score"
+            android:ems="6"
             android:paddingStart="10dp"
-            android:paddingEnd="20dp"
             android:paddingTop="2dp"
+            android:paddingEnd="20dp"
             android:paddingBottom="5dp"
-            />
+            android:text="Share"
+            android:textColor="@color/coloryellownew"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabfour"
+            android:id="@+id/fabFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fabSize="mini"
+            app:fabCustomSize="60dp"
+            app:maxImageSize="30sp"
             app:srcCompat="@drawable/ic_check_yellow_24dp"
             tools:ignore="VectorDrawableCompat"
             />
@@ -376,13 +388,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="239dp">
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="331dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textColor="@color/coloryellownew"
             android:background="@drawable/btn_score"
             android:text="Eng"
@@ -401,6 +413,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fabSize="mini"
+            app:fabCustomSize="60dp"
+            app:maxImageSize="30sp"
             app:srcCompat="@drawable/ic_check_yellow_24dp"
             tools:ignore="VectorDrawableCompat"
             />
@@ -413,14 +427,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="198dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="270dp"
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textColor="@color/coloryellownew"
             android:background="@drawable/btn_score"
             android:text="Dark"
@@ -440,6 +454,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fabSize="mini"
+            app:fabCustomSize="60dp"
+            app:maxImageSize="30sp"
             app:srcCompat="@drawable/ic_check_yellow_24dp"
             />
 
@@ -450,14 +466,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="157dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="210dp"
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textColor="@color/coloryellownew"
             android:background="@drawable/btn_score"
             android:text="New Game"
@@ -477,6 +493,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fabSize="mini"
+            app:fabCustomSize="60dp"
+            app:maxImageSize="30sp"
             app:srcCompat="@drawable/ic_add_yelow_24dp"
             />
 
@@ -491,10 +509,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="120dp"
         app:fabSize="normal"
-        app:srcCompat="@drawable/ic_add_yelow_24dp"
+        app:maxImageSize="50dp"
+        app:fabCustomSize="90dp"
+        app:srcCompat="@drawable/ic_add_black_48dp"
         />
 
 

@@ -341,146 +341,155 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="280dp">
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="370dp">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="20sp"
-    android:textColor="@color/coloryellownew"
-    android:background="@drawable/btn_score"
-    android:text="Share"
-    android:textStyle="bold"
-    android:ems="6"
-    android:layout_gravity="center_vertical"
-    android:layout_marginEnd="-10dp"
-    android:paddingStart="10dp"
-    android:paddingEnd="20dp"
-    android:paddingTop="2dp"
-    android:paddingBottom="5dp"
-    />
+        <TextView
+            android:id="@+id/fabTextFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="-10dp"
+            android:background="@drawable/btn_score"
+            android:ems="6"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="5dp"
+            android:text="Share"
+            android:textColor="@color/coloryellownew"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
 
-<com.google.android.material.floatingactionbutton.FloatingActionButton
-    android:id="@+id/fabfour"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:fabSize="mini"
-    app:srcCompat="@drawable/ic_check_yellow_24dp"
-    tools:ignore="VectorDrawableCompat"
-    />
-</LinearLayout>
-
-    <LinearLayout
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_alignParentBottom="true"
-android:layout_alignParentEnd="true"
-android:layout_marginEnd="28dp"
-android:layout_marginBottom="239dp">
-
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="20sp"
-    android:textColor="@color/coloryellownew"
-    android:background="@drawable/btn_score"
-    android:text="Eng"
-    android:textStyle="bold"
-    android:ems="6"
-    android:layout_gravity="center_vertical"
-    android:layout_marginEnd="-10dp"
-    android:paddingStart="10dp"
-    android:paddingEnd="20dp"
-    android:paddingTop="2dp"
-    android:paddingBottom="5dp"
-    />
-
-<com.google.android.material.floatingactionbutton.FloatingActionButton
-    android:id="@+id/fabThree"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:fabSize="mini"
-    app:srcCompat="@drawable/ic_check_yellow_24dp"
-    tools:ignore="VectorDrawableCompat"
-    />
-</LinearLayout>
-
-
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:fabCustomSize="60dp"
+            app:maxImageSize="30sp"
+            app:srcCompat="@drawable/ic_check_yellow_24dp"
+            tools:ignore="VectorDrawableCompat"
+            />
+    </LinearLayout>
 
     <LinearLayout
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_alignParentBottom="true"
-android:layout_alignParentEnd="true"
-android:layout_marginEnd="28dp"
-android:layout_marginBottom="198dp"
-    >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="310dp">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="20sp"
-    android:textColor="@color/coloryellownew"
-    android:background="@drawable/btn_score"
-    android:text="Dark"
-    android:textStyle="bold"
-    android:layout_gravity="center_vertical"
-    android:layout_marginEnd="-10dp"
-    android:ems="6"
-    android:paddingStart="10dp"
-    android:paddingEnd="20dp"
-    android:paddingTop="2dp"
-    android:paddingBottom="5dp"
-    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/coloryellownew"
+            android:background="@drawable/btn_score"
+            android:text="Eng"
+            android:textStyle="bold"
+            android:ems="6"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="-10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:fabCustomSize="60dp"
+            app:maxImageSize="30sp"
+            app:srcCompat="@drawable/ic_check_yellow_24dp"
+            tools:ignore="VectorDrawableCompat"
+            />
+    </LinearLayout>
 
 
-<com.google.android.material.floatingactionbutton.FloatingActionButton
-    android:id="@+id/fabTwo"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:fabSize="mini"
-    app:srcCompat="@drawable/ic_check_yellow_24dp"
-    />
-
-</LinearLayout>
 
     <LinearLayout
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_alignParentBottom="true"
-android:layout_alignParentEnd="true"
-android:layout_marginEnd="28dp"
-android:layout_marginBottom="157dp"
-    >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="250dp"
+        >
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="20sp"
-    android:textColor="@color/coloryellownew"
-    android:background="@drawable/btn_score"
-    android:text="New Game"
-    android:textStyle="bold"
-    android:ems="6"
-    android:layout_gravity="center_vertical"
-    android:layout_marginEnd="-10dp"
-    android:paddingStart="10dp"
-    android:paddingEnd="20dp"
-    android:paddingTop="2dp"
-    android:paddingBottom="5dp"
-    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/coloryellownew"
+            android:background="@drawable/btn_score"
+            android:text="Dark"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="-10dp"
+            android:ems="6"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            />
 
 
-<com.google.android.material.floatingactionbutton.FloatingActionButton
-    android:id="@+id/fabOne"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:fabSize="mini"
-    app:srcCompat="@drawable/ic_add_yelow_24dp"
-    />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:fabCustomSize="60dp"
+            app:maxImageSize="30sp"
+            app:srcCompat="@drawable/ic_check_yellow_24dp"
+            />
 
-</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="190dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/coloryellownew"
+            android:background="@drawable/btn_score"
+            android:text="New Game"
+            android:textStyle="bold"
+            android:ems="6"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="-10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:fabCustomSize="60dp"
+            app:maxImageSize="30sp"
+            app:srcCompat="@drawable/ic_add_yelow_24dp"
+            />
+
+    </LinearLayout>
 
 
 
@@ -491,11 +500,13 @@ android:layout_marginBottom="157dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="110dp"
         app:fabSize="normal"
-        app:srcCompat="@drawable/ic_add_yelow_24dp"
-         />
+        app:maxImageSize="40dp"
+        app:fabCustomSize="80dp"
+        app:srcCompat="@drawable/ic_add_black_48dp"
+        />
 
 
 </RelativeLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,19 +8,19 @@
     android:orientation="vertical">
 
 
-
     <LinearLayout
         android:id="@+id/linearLayout_menu_med_line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
             android:layout_marginLeft="@dimen/cardView_padding"
+            android:layout_marginTop="1dp"
             android:layout_marginRight="@dimen/cardView_padding"
             android:orientation="horizontal">
 
@@ -38,12 +38,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/btn_height_normal_size"
                     android:background="@android:color/transparent"
+                    android:ems="3"
                     android:text="@string/player1"
                     android:textAllCaps="false"
-                    android:ems="3"
-                    android:textStyle="bold"
                     android:textColor="@color/coloryellownew"
-                    android:textSize="@dimen/player_size" />
+                    android:textSize="@dimen/player_size"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/igrok1_D"
@@ -51,10 +51,10 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="20dp"
-                    android:textStyle="bold"
                     android:text="D"
                     android:textColor="@color/colorRed"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <View
                     android:layout_width="match_parent"
@@ -72,9 +72,9 @@
                     android:background="@android:color/transparent"
                     android:text="@string/player2"
                     android:textAllCaps="false"
-                    android:textStyle="bold"
                     android:textColor="@color/coloryellownew"
-                    android:textSize="@dimen/player_size" />
+                    android:textSize="@dimen/player_size"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/igrok2_D"
@@ -84,17 +84,17 @@
                     android:layout_marginTop="30dp"
                     android:layout_marginRight="20dp"
                     android:text="D"
-                    android:textStyle="bold"
                     android:textColor="@color/colorRed"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@color/colorBlack"
                 android:layout_weight="3"
+                android:background="@color/colorBlack"
                 android:orientation="vertical">
 
                 <View
@@ -109,9 +109,9 @@
                     android:background="@android:color/transparent"
                     android:text="@string/player3"
                     android:textAllCaps="false"
-                    android:textStyle="bold"
                     android:textColor="@color/coloryellownew"
-                    android:textSize="@dimen/player_size" />
+                    android:textSize="@dimen/player_size"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/igrok3_D"
@@ -119,10 +119,10 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="20dp"
-                    android:textStyle="bold"
                     android:text="D"
                     android:textColor="@color/colorRed"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <View
                     android:layout_width="match_parent"
@@ -141,9 +141,9 @@
                     android:clickable="true"
                     android:text="@string/player4"
                     android:textAllCaps="false"
-                    android:textStyle="bold"
                     android:textColor="@color/coloryellownew"
-                    android:textSize="@dimen/player_size" />
+                    android:textSize="@dimen/player_size"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/igrok4_D"
@@ -152,10 +152,10 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="30sp"
                     android:layout_marginRight="20dp"
-                    android:textStyle="bold"
                     android:text="D"
                     android:textColor="@color/colorRed"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </RelativeLayout>
 
@@ -163,8 +163,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
-                android:background="@color/colorBlack"
                 android:layout_weight="3"
+                android:background="@color/colorBlack"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingLeft="1dp">
@@ -178,12 +178,12 @@
                     android:id="@+id/txt_announce"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
                     android:text="@string/announce"
                     android:textAllCaps="false"
-                    android:textStyle="bold"
-                    android:background="@android:color/transparent"
                     android:textColor="@color/coloryellownew"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -198,11 +198,12 @@
     <ScrollView
         android:id="@+id/scrollView_Result"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="0dp"
         android:layout_below="@id/linearLayout_menu_med_line"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="0dp">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_menu_med_line">
 
         <LinearLayout
             android:id="@+id/ResultLayout"
@@ -216,8 +217,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/txtView_kom1"
@@ -226,8 +227,8 @@
                     android:layout_weight="33"
                     android:gravity="center"
                     android:hint="0"
-                    android:textSize="20sp"
-                    android:onClick="open_extra_buttons_Team1" />
+                    android:onClick="open_extra_buttons_Team1"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/txtView_kom2"
@@ -236,8 +237,8 @@
                     android:layout_weight="33"
                     android:gravity="center"
                     android:hint="0"
-                    android:textSize="20sp"
-                    android:onClick="open_extra_buttons_Team2" />
+                    android:onClick="open_extra_buttons_Team2"
+                    android:textSize="20sp" />
 
 
                 <ImageView
@@ -253,25 +254,37 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="22"
-                    android:gravity="center_vertical"
                     android:ems="2"
+                    android:gravity="center_vertical"
                     android:hint="@string/order"
                     android:onClick="open_extra_Order_buttons"
                     android:textSize="20sp" />
 
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txt_player1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorBlack60" />
+
+
         </LinearLayout>
     </ScrollView>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="@dimen/cardView_padding"
-        android:layout_marginRight="@dimen/cardView_padding"
 
-        android:orientation="horizontal">
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <TextView
@@ -283,11 +296,11 @@
             android:background="@color/colorBlack"
             android:clickable="false"
             android:gravity="center"
+            android:onClick="open_extra_buttons_Team1"
             android:text="@string/team1"
             android:textColor="@color/coloryellownew"
-            android:textStyle="bold"
-            android:onClick="open_extra_buttons_Team1"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
         <View
@@ -304,11 +317,11 @@
             android:background="@color/colorBlack"
             android:clickable="false"
             android:gravity="center"
+            android:onClick="open_extra_buttons_Team2"
             android:text="@string/team2"
             android:textColor="@color/coloryellownew"
-            android:textStyle="bold"
-            android:onClick="open_extra_buttons_Team2"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
         <View
@@ -324,173 +337,151 @@
             android:background="@color/colorRed"
             android:clickable="false"
             android:gravity="center"
+            android:onClick="open_extra_Order_buttons"
             android:text="Order"
             android:textColor="@color/coloryellownew"
-            android:onClick="open_extra_Order_buttons"
-            android:textStyle="bold"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="230dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:textColor="@color/coloryellownew"
-            android:background="@drawable/btn_score"
-            android:text="Share"
-            android:textStyle="bold"
-            android:ems="6"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="-10dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="20dp"
-            android:paddingTop="2dp"
-            android:paddingBottom="5dp"
-            />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabfour"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fabSize="mini"
-            app:srcCompat="@drawable/ic_check_yellow_24dp"
-            tools:ignore="VectorDrawableCompat"
-            />
+            android:textStyle="bold" />
 
     </LinearLayout>
 
-    <LinearLayout
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="189dp">
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="4dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_check_yellow_24dp"
+        tools:ignore="VectorDrawableCompat" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textColor="@color/coloryellownew"
-            android:background="@drawable/btn_score"
-            android:text="Eng"
-            android:textStyle="bold"
-            android:ems="6"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="-10dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="20dp"
-            android:paddingTop="2dp"
-            android:paddingBottom="5dp"
-            />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabThree"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fabSize="mini"
-            app:srcCompat="@drawable/ic_check_yellow_24dp"
-            tools:ignore="VectorDrawableCompat"
-            />
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="148dp"
-        >
 
     <TextView
+        android:id="@+id/fabTextShare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textColor="@color/coloryellownew"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/btn_score"
-        android:text="Dark"
-        android:textStyle="bold"
-        android:layout_gravity="center_vertical"
-        android:layout_marginEnd="-10dp"
         android:ems="6"
         android:paddingStart="10dp"
-        android:paddingEnd="20dp"
         android:paddingTop="2dp"
+        android:paddingEnd="20dp"
         android:paddingBottom="5dp"
-        />
+        android:text="Share"
+        android:textColor="@color/coloryellownew"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fabFour"
+        app:layout_constraintEnd_toEndOf="@+id/fabFour"
+        app:layout_constraintTop_toTopOf="@+id/fabFour" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="4dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_check_yellow_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <TextView
+        android:id="@+id/fabTextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_score"
+        android:ems="6"
+        android:paddingStart="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="Theme"
+        android:textColor="@color/coloryellownew"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fabThree"
+        app:layout_constraintEnd_toEndOf="@+id/fabThree"
+        app:layout_constraintTop_toTopOf="@+id/fabThree" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="4dp"
         app:fabSize="mini"
-        app:srcCompat="@drawable/ic_check_yellow_24dp"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/fabOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_check_yellow_24dp" />
 
-    </LinearLayout>
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/fabTextEng"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="107dp"
-        >
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_score"
+        android:ems="6"
+        android:paddingStart="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="Eng"
+        android:textColor="@color/coloryellownew"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fabTwo"
+        app:layout_constraintEnd_toEndOf="@+id/fabTwo"
+        app:layout_constraintTop_toTopOf="@+id/fabTwo" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textColor="@color/coloryellownew"
-            android:background="@drawable/btn_score"
-            android:text="New Game"
-            android:textStyle="bold"
-            android:ems="6"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="-10dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="20dp"
-            android:paddingTop="2dp"
-            android:paddingBottom="5dp"
-            />
-
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabOne"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fabSize="mini"
-            app:srcCompat="@drawable/ic_add_yelow_24dp"
-            />
-
-    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="4dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add_yelow_24dp" />
 
 
+    <TextView
+        android:id="@+id/fabTextNg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_score"
+        android:ems="6"
+        android:paddingStart="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="New Game"
+        android:textColor="@color/coloryellownew"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fabOne"
+        app:layout_constraintEnd_toEndOf="@+id/fabOne"
+        app:layout_constraintTop_toTopOf="@+id/fabOne" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
         app:fabSize="normal"
-        app:srcCompat="@drawable/ic_add_yelow_24dp"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:srcCompat="@drawable/ic_add_yelow_24dp" />
 
-</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
