@@ -96,6 +96,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:clickable="true"
                 android:id="@+id/txtView_blot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

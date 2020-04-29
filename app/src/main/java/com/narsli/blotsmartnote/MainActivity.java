@@ -22,9 +22,14 @@ public class MainActivity extends AppCompatActivity implements
         View.OnClickListener {
     //_____________________________________________________________________
 //--------------------------- POPOXAKANNER ----------------------------
-    private TextView txtView_kom1, txtView_kom2, txtView_order;
+    private TextView
+            txtView_kom1, txtView_kom2, txtView_order,
+            igrok1_D, igrok2_D, igrok3_D, igrok4_D;
     private ImageView Img_mast;
-    byte kom1_kom2;
+    byte kom1_kom2, kom1_kom2_xosacele;
+    int mast;
+    String order;
+
 //_____________________________________________________________________
 //___________________________menu popoxakanner ________________________
 
@@ -36,6 +41,10 @@ public class MainActivity extends AppCompatActivity implements
     private static final String TAG = "MainActivity";
 
     Boolean isMenuOpen = false;
+    private TextView txtView_Team1, txtView_Team2, txtView_zakaz;
+    boolean team1Team2_Zakaz_banali = true;//true=bacel zakazn, false bacel team1 or team2
+    int igrok_ochered = 1;
+
 
     //_____________________________________________________________________
     @Override
@@ -53,35 +62,22 @@ public class MainActivity extends AppCompatActivity implements
         txtView_kom2 = findViewById(R.id.txtView_kom2);
         Img_mast = findViewById(R.id.Img_mast);
 
-        // txtView_kom1.setText("kom1_kom2_miavor");
-        // txtView_kom1.setText("kom1_kom2_miavor");
-////--------------------------------------------------------------------------
-//        //dialog
-//        dialog=new Dialog(this);//stexcum enq dialog
-//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//anjatum enq vernagirn
-//        dialog.setContentView(R.layout.chors_tuxt_dialog);//kpcnum enq razmetkain(maketin)
-//        //dialog-i foni hetevn lini tapancik
-//        // dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-////asum enq dialogi mej inch ka et chaperov el lini dilaogn
-////         dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT,
-////                 WindowManager.LayoutParams.MATCH_PARENT);
-//        dialog.setCancelable(false);//nazad knopkan anjatum enq
-//
-//
-////        layout=findViewById(R.id.layout);
-//
-////-------------------------------------------------------------------------
 
+        txtView_Team1 = findViewById(R.id.txtView_Team1);
+        txtView_Team2 = findViewById(R.id.txtView_Team2);
+        txtView_zakaz = findViewById(R.id.txtView_zakaz);
 
+        igrok1_D = findViewById(R.id.igrok1_D);
+        igrok2_D = findViewById(R.id.igrok2_D);
+        igrok3_D = findViewById(R.id.igrok3_D);
+        igrok4_D = findViewById(R.id.igrok4_D);
+//--------------------------------------------------------------------------
+        igrok2_D.setVisibility(View.INVISIBLE);
+        igrok3_D.setVisibility(View.INVISIBLE);
+        igrok4_D.setVisibility(View.INVISIBLE);
+//--------------------------------------------------------------------------
     }
 
-    //    public void aaa(View view) {
-//        dialog.show();
-//    }
-//
-//    public void as(View view) {
-//        dialog.dismiss();
-//    }
     //--------------------------------------------------------------------
     // interfeysi metodi pereopreedlyactia
     @Override
@@ -93,7 +89,11 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     //-----------------------------------------------------------------------------
-    public void order_OnButtonClicked(int mast, String order) {
+//ays metodn mianum e useri order-n uzeluc heto(zakaz knopkai vra sexmeluc heto)
+    public void order_OnButtonClicked(byte kom1_kom2_xosacele, int mast, String order) {
+        this.kom1_kom2_xosacele = kom1_kom2_xosacele;
+        this.mast = mast;//tvysl oyini mastn e
+        this.order = order;//tvyal oyini xosacac tivn e
         txtView_order.setText(order);
         switch (mast) {
             case 0:
@@ -115,34 +115,35 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     //_____________________________________________________________________
-
-
+//ays metodn mianum e useri Team1-n sexmeluc heto
     public void open_extra_buttons_Team1(View view) {
         kom1_kom2 = 1;
 //activity-ic dialog info poxancelu hamar e
         //        //mer sarqac interfeysi ekzempliar
-        ExtraButtonDialog bottomSheet = new ExtraButtonDialog();
+        ExtraButtonDialog bottomSheet = new ExtraButtonDialog(kom1_kom2, mast, order);
         bottomSheet.show(getSupportFragmentManager(), "exampleBottomSheet");
+        if (igrok_ochered == 4)
+            igrok_ochered = 1;
+        else
+            igrok_ochered++;
     }
 
     //------------------------------------------------------------------------------
+//ays metodn mianum e useri Team2-n sexmeluc heto
     public void open_extra_buttons_Team2(View view) {
         kom1_kom2 = 2;
 //activity-ic dialog info poxancelu hamar e
         //        //mer sarqac interfeysi ekzempliar
-        ExtraButtonDialog bottomSheet = new ExtraButtonDialog();
+        ExtraButtonDialog bottomSheet = new ExtraButtonDialog(kom1_kom2, mast, order);
         bottomSheet.show(getSupportFragmentManager(), "exampleBottomSheet");
-    }
-    //------------------------------------------------------------
-//    public void open_extra_buttons(View view) {
-//
-////activity-ic dialog info poxancelu hamar e
-//        //        //mer sarqac interfeysi ekzempliar
-//            ExtraButtonDialog bottomSheet = new ExtraButtonDialog();
-//            bottomSheet.show(getSupportFragmentManager(), "exampleBottomSheet");
-//
-//    }
 
+        if (igrok_ochered == 4)
+            igrok_ochered = 1;
+        else
+            igrok_ochered++;
+    }
+
+    //------------------------------------------------------------
     public void open_extra_Order_buttons(View view) {
 
         try {
@@ -150,6 +151,24 @@ public class MainActivity extends AppCompatActivity implements
             bottomSheet.show(getSupportFragmentManager(), "exampleBottomSheet");
         } catch (ClassCastException e) {
             throw new ClassCastException();
+        }
+//        txtView_Team1, txtView_Team2,txtView_zakaz
+        if (team1Team2_Zakaz_banali == true)//
+        {
+            txtView_zakaz.setBackgroundResource(R.color.colorBlack);
+            txtView_Team1.setBackgroundResource(R.color.colorRed);
+            txtView_Team2.setBackgroundResource(R.color.colorRed);
+//            anjatum enq useri hamar zakazi hnaravorutyunn
+//            txtView_zakaz.setFocusable(false);
+//            txtView_zakaz.setEnabled(false);
+
+            txtView_Team1.setFocusable(true);
+            txtView_Team1.setEnabled(true);
+
+            txtView_Team2.setFocusable(true);
+            txtView_Team2.setEnabled(true);
+            team1Team2_Zakaz_banali = !team1Team2_Zakaz_banali;
+
         }
 
     }

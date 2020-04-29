@@ -187,6 +187,7 @@
                 android:layout_marginEnd="20dp"
                 android:text="0"
                 android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btn_chorstuxt_plus"
                 tools:ignore="MissingConstraints" />
 
@@ -252,6 +253,7 @@
                 android:layout_marginEnd="20dp"
                 android:text="0"
                 android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btn_100_plus"
                 tools:ignore="MissingConstraints" />
 

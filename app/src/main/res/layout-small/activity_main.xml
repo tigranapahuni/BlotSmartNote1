@@ -47,6 +47,7 @@
                         android:textSize="@dimen/player_size" />
 
                     <TextView
+                        android:id="@+id/igrok1_D"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -78,6 +79,7 @@
                         android:textSize="@dimen/player_size"/>
 
                     <TextView
+                        android:id="@+id/igrok2_D"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -115,6 +117,7 @@
                         android:textSize="@dimen/player_size" />
 
                     <TextView
+                        android:id="@+id/igrok3_D"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -147,6 +150,7 @@
                         android:textSize="@dimen/player_size" />
 
                     <TextView
+                        android:id="@+id/igrok4_D"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -275,7 +279,8 @@
 
 
         <TextView
-            android:id="@+id/txtView_1"
+            android:enabled="false"
+            android:id="@+id/txtView_Team1"
             android:layout_width="wrap_content"
             android:layout_height="21dp"
             android:layout_weight="3"
@@ -294,9 +299,10 @@
             android:background="@color/coloryellownew" />
 
         <TextView
-            android:id="@+id/txtView_2"
+            android:enabled="false"
+            android:id="@+id/txtView_Team2"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="21dp"
             android:layout_weight="3"
             android:background="@color/colorBlack"
             android:clickable="false"
@@ -313,11 +319,11 @@
             android:background="@color/coloryellownew" />
 
         <TextView
-            android:id="@+id/tnm_order"
+            android:id="@+id/txtView_zakaz"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="21dp"
             android:layout_weight="3"
-            android:background="@color/colorBlack"
+            android:background="@color/colorRed"
             android:clickable="false"
             android:gravity="center"
             android:text="Order"

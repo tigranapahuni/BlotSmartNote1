@@ -15,6 +15,42 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_Team1"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ems="3"
+                android:background="@color/coloryellowstrong"
+                android:text="@string/team1"
+                android:textColor="@color/coloryellownew"
+                android:textSize="@dimen/tver_Btn_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_Team2"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_score"
+                android:gravity="center"
+                android:ems="3"
+                android:text="@string/team2"
+                android:textColor="@color/coloryellownew"
+                android:textSize="@dimen/tver_Btn_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
             android:id="@+id/line1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,13 +59,13 @@
             <ImageButton
                 android:id="@+id/ImgBtn_xach"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
                 android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/coloryellowstrong"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:background="#ECAF35"
                 app:srcCompat="@drawable/x_48" />
 
             <ImageButton
