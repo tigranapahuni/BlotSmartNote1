@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coloryellownew"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_menu_med_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/colorBlack"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/txt_player1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height_normal_size"
+                    android:background="@android:color/transparent"
+                    android:ems="3"
+                    android:text="@string/player1"
+                    android:textAllCaps="false"
+                    android:maxLength="7"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="@dimen/player_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/igrok1_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="D"
+                    android:textColor="@color/colorRed"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txt_player1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/coloryellownew" />
+
+                <Button
+                    android:id="@+id/txt_player2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height_normal_size"
+                    android:layout_below="@id/txt_player1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/player2"
+                    android:maxLength="7"
+                    android:textAllCaps="false"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="@dimen/player_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/igrok2_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:text="D"
+                    android:textColor="@color/colorRed"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:background="@color/colorBlack"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:background="@color/coloryellownew" />
+
+                <Button
+                    android:id="@+id/txt_player3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height_normal_size"
+                    android:background="@android:color/transparent"
+                    android:text="@string/player3"
+                    android:maxLength="7"
+                    android:textAllCaps="false"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="@dimen/player_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/igrok3_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="D"
+                    android:textColor="@color/colorRed"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txt_player3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/coloryellownew" />
+
+                <Button
+                    android:id="@+id/txt_player4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height_normal_size"
+                    android:layout_below="@id/txt_player3"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:text="@string/player4"
+                    android:maxLength="7"
+                    android:textAllCaps="false"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="@dimen/player_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/igrok4_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginRight="20dp"
+                    android:text="D"
+                    android:textColor="@color/colorRed"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="@color/colorBlack"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="1dp">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="80dp"
+                    android:background="@color/coloryellownew" />
+
+                <Button
+                    android:id="@+id/txt_announce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="@string/announce"
+                    android:textAllCaps="false"
+                    android:textColor="@color/coloryellownew"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_menu"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorBlack" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView_Result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/linearLayout_menu_med_line"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_menu_med_line">
+
+        <LinearLayout
+            android:id="@+id/ResultLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="resultLayout_Click"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtView_kom1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:onClick="open_extra_buttons_Team1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtView_kom2"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:onClick="open_extra_buttons_Team2"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:id="@+id/Img_mast"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:onClick="open_extra_Order_buttons"
+                    android:src="@drawable/x_24" />
+
+                <TextView
+                    android:id="@+id/txtView_order"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="22"
+                    android:ems="2"
+                    android:gravity="center_vertical"
+                    android:hint="@string/order"
+                    android:onClick="open_extra_Order_buttons"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorBlack60" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="4dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_share_yellow_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <TextView
+        android:id="@+id/fabTextShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_score"
+        android:ems="6"
+        android:paddingStart="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="Share"
+        android:textColor="@color/coloryellownew"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fabFour"
+        app:layout_constraintEnd_toEndOf="@+id/fabFour"
+        app:layout_constraintTop_toTopOf="@+id/fabFour" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="4dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_color_lens_yellow_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <TextView
+        android:id="@+id/fabTextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_score"
+        android:ems="6"
+        android:paddingStart="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="Theme"
+        android:textColor="@color/coloryellownew"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fabThree"
+        app:layout_constraintEnd_toEndOf="@+id/fabThree"
+        app:layout_constraintTop_toTopOf="@+id/fabThree" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="4dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_language_yellow_24dp" />
+
+
+    <TextView
+        android:id="@+id/fabTextEng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_score"
+        android:ems="6"
+        android:paddingStart="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="Eng"
+        android:textColor="@color/coloryellownew"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fabTwo"
+        app:layout_constraintEnd_toEndOf="@+id/fabTwo"
+        app:layout_constraintTop_toTopOf="@+id/fabTwo" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="4dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add_yelow_24dp" />
+
+
+    <TextView
+        android:id="@+id/fabTextNg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_score"
+        android:ems="6"
+        android:paddingStart="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="New Game"
+        android:textColor="@color/coloryellownew"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fabOne"
+        app:layout_constraintEnd_toEndOf="@+id/fabOne"
+        app:layout_constraintTop_toTopOf="@+id/fabOne" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_more_vert_yellow_24dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
