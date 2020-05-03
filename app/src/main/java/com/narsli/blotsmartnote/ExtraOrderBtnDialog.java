@@ -114,7 +114,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                 }
                 if (order.length() == 2)
                     order = order.substring(0, order.length() - 1);
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                // mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
             }
         });
 //---------------------------------------------------------------------
@@ -126,7 +126,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                     order = "1";
                 else if (order != "K" & order.length() > 0 & order.length() < 2)
                     order = order + "1";
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //  mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
             }
         });
 //------------------------------------------------------------------
@@ -138,7 +138,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                     order = "2";
                 else if (order != "K" & order.length() > 0 & order.length() < 2)
                     order = order + "2";
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //  mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
             }
         });
         //---------------------------------------------------------------------
@@ -150,7 +150,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                     order = "3";
                 else if (order != "K" & order.length() > 0 & order.length() < 2)
                     order = order + "3";
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //  mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
             }
         });//---------------------------------------------------------------------
         btn_4.setOnClickListener(new View.OnClickListener() {
@@ -161,7 +161,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                     order = "4";
                 else if (order != "K" & order.length() > 0 & order.length() < 2)
                     order = order + "4";
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //  mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
             }
         });//---------------------------------------------------------------------
         btn_5.setOnClickListener(new View.OnClickListener() {
@@ -172,7 +172,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                     order = "5";
                 else if (order != "K" & order.length() > 0 & order.length() < 2)
                     order = order + "5";
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //  mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
             }
         });//---------------------------------------------------------------------
         btn_6.setOnClickListener(new View.OnClickListener() {
@@ -183,7 +183,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                     order = "6";
                 else if (order != "K" & order.length() > 0 & order.length() < 2)
                     order = order + "6";
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //   mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
             }
         });//---------------------------------------------------------------------
         btn_7.setOnClickListener(new View.OnClickListener() {
@@ -194,7 +194,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                     order = "7";
                 else if (order != "K" & order.length() > 0 & order.length() < 2)
                     order = order + "7";
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //   mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
             }
         });//---------------------------------------------------------------------
         btn_8.setOnClickListener(new View.OnClickListener() {
@@ -205,7 +205,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                     order = "8";
                 else if (order != "K" & order.length() > 0 & order.length() < 2)
                     order = order + "8";
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //  mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
             }
         });//---------------------------------------------------------------------
         btn_9.setOnClickListener(new View.OnClickListener() {
@@ -216,7 +216,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                     order = "9";
                 else if (order != "K" & order.length() > 0 & order.length() < 2)
                     order = order + "9";
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //  mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
             }
         });
 //---------------------------------------------------------------------
@@ -227,7 +227,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
 
                 if (order != "K" & order != "0" & order.length() == 1) {
                     order = order + "0";
-                    mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                    //  mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
                 }
             }
         });
@@ -263,11 +263,11 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                             throw new ClassCastException();
                         }
 //------------------------------------
-                        mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                        //  mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
                         btn_K.setBackgroundResource(R.color.colorBlue);
                     }
                     kaput_banali = !kaput_banali;
-                    mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                    //   mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
                 }
             }
         });
@@ -301,7 +301,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                     }
 
                     quansh_banali = !quansh_banali;
-                    mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                    //  mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
                 }
             }
         });
@@ -332,7 +332,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                         btn_x2.setTextColor(getResources().getColor(R.color.coloryellownew));
                     }
                     kontr_banali = !kontr_banali;
-                    mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                    //   mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
                 }
             }
         });
@@ -347,7 +347,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
                 ImgBtn_qiap.setBackgroundResource(R.color.coloryellownew);
 
                 mast_banali = 4;
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //  mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
             }
         });
 //------------------------------------------------------------------
@@ -355,7 +355,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
             @Override
             public void onClick(View v) {
                 mast_banali = 0;
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //   mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
 
                 ImgBtn_xach.setBackgroundResource(R.color.coloryellowstrong);
                 ImgBtn_tuz.setBackgroundResource(R.color.coloryellownew);
@@ -369,7 +369,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
             @Override
             public void onClick(View v) {
                 mast_banali = 2;
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //   mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
 
                 ImgBtn_xar.setBackgroundResource(R.color.coloryellowstrong);
                 ImgBtn_xach.setBackgroundResource(R.color.coloryellownew);
@@ -383,7 +383,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
             @Override
             public void onClick(View v) {
                 mast_banali = 1;
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //   mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
 
                 ImgBtn_sirt.setBackgroundResource(R.color.coloryellowstrong);
                 ImgBtn_xar.setBackgroundResource(R.color.coloryellownew);
@@ -397,7 +397,7 @@ public class ExtraOrderBtnDialog extends BottomSheetDialogFragment {
             @Override
             public void onClick(View v) {
                 mast_banali = 3;
-                mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
+                //   mListener.order_OnButtonClicked(kom1_kom2, mast_banali, order);
 
                 ImgBtn_qiap.setBackgroundResource(R.color.coloryellowstrong);
                 ImgBtn_xar.setBackgroundResource(R.color.coloryellownew);
